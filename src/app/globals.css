@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-english), var(--font-hindi), sans-serif;
+  --font-hindi: var(--font-hindi), sans-serif;
+  --font-english: var(--font-english), sans-serif;
+
+  --color-saffron: #ff5100;
+  --color-saffron-light: #ff7700;
+  --color-saffron-dark: #cc3c00;
+  --color-dark-bg: #ffffff;
+  --color-dark-card: #fcfcfd;
+  --color-dark-border: rgba(0, 0, 0, 0.06);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse-slow 4s ease-in-out infinite;
+  --animate-spin-slow: spin-slow 20s linear infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(3deg); }
+  }
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.15; }
+    50% { opacity: 0.35; }
+  }
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 81, 0, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 81, 0, 0.5);
+}
+
+/* Custom Utilities & Effects */
+.text-gradient {
+  background: linear-gradient(135deg, #0f172a 30%, #334155 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-saffron {
+  background: linear-gradient(135deg, #ff7700 0%, #ff3300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.04);
+}
+
+.glass-panel-glow {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 81, 0, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(255, 81, 0, 0.04);
+}
+
+/* Custom cinematic light leak */
+.cinematic-leak {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 81, 0, 0.08) 0%, rgba(255,255,255,0) 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ambient Dust Particles */
+.particle {
+  position: absolute;
+  background: radial-gradient(circle, rgba(255, 119, 0, 0.4) 0%, rgba(255, 119, 0, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Smooth custom resets */
+html {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+body {
+  font-family: var(--font-english), var(--font-hindi), sans-serif;
+}
