@@ -426,7 +426,7 @@ export const translations: Record<'hi' | 'en', TranslationSet> = {
       rights: "All Rights Reserved."
     },
     constitution: {
-      title: "Professional Constitution & Bylaws",
+      title: "Professional Constitution & Bylaws.",
       subtitle: "Official Code of Regulations for Madhya Pradesh Yuva Samaj Sena",
       preambleTitle: "Revised Preamble",
       preambleText: "We, the youth who believe in social, national, and human values, establish 'Madhya Pradesh Yuva Samaj Sena' to strengthen the spirit of equality, unity, cooperation, justice, and humanity in society.\n\nThis organization will operate strictly on the principles of humanism, social upliftment, brotherhood, discipline, and public service.\n\nThe emergence of 'Madhya Pradesh Yuva Samaj Sena' took place during the difficult times of the COVID-19 pandemic on June 20, 2020. The organization initially started its active social service and public cooperation in the Manpur tehsil of Umaria district in Madhya Pradesh. Considering human service as the supreme duty under adverse conditions, the organization is constantly striving to move forward in the interest of society and the nation.\n\nThe objective of the organization is to consider the problem of every individual in society as our collective responsibility and to strive and cooperate for its resolution.\n\nWe solemnly pledge that the organization will always work on the path of humanity, unity, respect, and social justice.",
