@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "./LanguageContext";
-import { Droplet, Leaf, Trash2, HeartHandshake, BookOpen, ShieldAlert } from "lucide-react";
+import { Award, Users, HeartHandshake, Zap, Scale, FileText } from "lucide-react";
 
 export default function ImpactSection() {
   const { t } = useLanguage();
@@ -11,42 +11,42 @@ export default function ImpactSection() {
   const campaigns = [
     {
       id: "blood",
-      icon: <Droplet size={22} />,
+      icon: <Award size={22} />,
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.37%20AM.jpeg",
       title: t.impact.blood.title,
       desc: t.impact.blood.desc,
     },
     {
       id: "plantation",
-      icon: <Leaf size={22} />,
+      icon: <Users size={22} />,
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.33%20AM%20(1).jpeg",
       title: t.impact.plantation.title,
       desc: t.impact.plantation.desc,
     },
     {
       id: "cleanliness",
-      icon: <Trash2 size={22} />,
+      icon: <HeartHandshake size={22} />,
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.35%20AM%20(1).jpeg",
       title: t.impact.cleanliness.title,
       desc: t.impact.cleanliness.desc,
     },
     {
       id: "poor",
-      icon: <HeartHandshake size={22} />,
+      icon: <Zap size={22} />,
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.18%20AM.jpeg",
       title: t.impact.poor.title,
       desc: t.impact.poor.desc,
     },
     {
       id: "awareness",
-      icon: <BookOpen size={22} />,
+      icon: <Scale size={22} />,
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.22%20AM%20(1).jpeg",
       title: t.impact.awareness.title,
       desc: t.impact.awareness.desc,
     },
     {
       id: "women",
-      icon: <ShieldAlert size={22} />,
+      icon: <FileText size={22} />,
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.25%20AM%20(1).jpeg",
       title: t.impact.women.title,
       desc: t.impact.women.desc,

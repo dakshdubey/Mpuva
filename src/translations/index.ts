@@ -128,28 +128,28 @@ export const translations: Record<'hi' | 'en', TranslationSet> = {
       sectionTitle: "सामाजिक प्रभाव",
       sectionSubtitle: "सेवा का निरंतर प्रवाह",
       blood: {
-        title: "रक्तदान महादान",
-        desc: "आपातकाल में जीवन बचाने के लिए 24x7 सक्रिय रक्तदाता वाहिनी। हजारों जरूरतमंदों को समय पर रक्त उपलब्ध कराकर जीवनदान दिया।"
+        title: "वीर शिरोमणि महाराणा प्रताप जयंती",
+        desc: "देश के प्रथम स्वतंत्रता संग्राम सेनानी महाराणा प्रताप जी की जयंती पर भव्य कार्यक्रम का आयोजन। युवाओं में देशभक्ति और वीरता के संस्कारों का सिंचन।"
       },
       plantation: {
-        title: "हरित क्रांति अभियान",
-        desc: "पर्यावरण संरक्षण के लिए मध्य प्रदेश के कोने-कोने में सघन वृक्षारोपण। प्रकृति का सम्मान ही संस्कृति का संरक्षण है।"
+        title: "मानपुर ईकाई की समीक्षा बैठक",
+        desc: "संगठन विस्तार एवं सामाजिक कार्यों की समीक्षा हेतु मानपुर कार्यालय में महत्वपूर्ण बैठक। नए पदाधिकारियों की नियुक्ति व कार्य विभाजन।"
       },
       cleanliness: {
-        title: "स्वच्छता व स्वच्छता जन चेतना",
-        desc: "पूज्य बापू के स्वप्न को साकार करते हुए निरंतर स्वच्छता अभियान। सार्वजनिक स्थलों की सफाई के साथ जागरूकता का संदेश।"
+        title: "प्रशासनिक अधिकारियों का स्वागत",
+        desc: "मानपुर में नवनियुक्त SDM एवं तहसीलदार से शिष्टाचार भेंट कर पुष्प गुच्छों से स्वागत। जनहित के कार्यों में प्रशासन को सहयोग का संकल्प।"
       },
       poor: {
-        title: "दीनबंधु सेवा",
-        desc: "विपदा के समय असहाय परिवारों, निर्धन बच्चों और वंचित वर्गों को राशन, वस्त्र और चिकित्सा सुविधाएं पहुँचाने का निरंतर प्रयास।"
+        title: "बिजली संकट के विरोध में नगर बंद",
+        desc: "जनप्रतिनिधियों की उदासीनता और बढ़ते बिजली संकट के विरोध में ऐतिहासिक मानपुर बंद का आयोजन। प्रशासन को सौंपा गया मुख्यमंत्री के नाम ज्ञापन।"
       },
       awareness: {
-        title: "शिक्षा और बौद्धिक चेतना",
-        desc: "गरीब बच्चों के लिए निःशुल्क शिक्षण शिविर, पठन सामग्री का वितरण और युवाओं को राष्ट्र निर्माण के लिए बौद्धिक रूप से जाग्रत करना।"
+        title: "किसानों के हक की लड़ाई",
+        desc: "मानपुर क्षेत्र के किसानों को मात्र 3-4 घंटे बिजली मिलने के विरोध में कमिश्नर कार्यालय में धरना और लापरवाह अधिकारियों पर कार्रवाई की मांग।"
       },
       women: {
-        title: "नारी सुरक्षा व स्वावलंबन",
-        desc: "महिलाओं की सुरक्षा के प्रति समाज को जागरूक करना, आत्मरक्षा प्रशिक्षण शिविर लगाना और नारी शक्ति को आत्मनिर्भर बनाना।"
+        title: "भ्रष्टाचार के विरुद्ध ज्ञापन",
+        desc: "विद्युत मंडल मानपुर में व्याप्त भ्रष्टाचार और जेई राजकुमार जायसवाल के मनमाने रवैये के खिलाफ शहडोल कमिश्नर को ज्ञापन सौंप कार्रवाई की मांग।"
       }
     },
     quote: {
@@ -364,28 +364,28 @@ export const translations: Record<'hi' | 'en', TranslationSet> = {
       sectionTitle: "Social Impact",
       sectionSubtitle: "A Legacy of Selfless Service",
       blood: {
-        title: "Blood Donation Movement",
-        desc: "A 24x7 proactive donor network working to save lives during critical emergencies. Instantly connecting hundreds of patients to healthy life-saving donors daily."
+        title: "Maharana Pratap Jayanti Celebration",
+        desc: "Organized a grand celebration on Maharana Pratap Jayanti to inspire local youth with patriotic values, honoring his unmatched courage."
       },
       plantation: {
-        title: "Eco Green Revolution",
-        desc: "Extensive tree plantation drives spanning all districts of Madhya Pradesh. Respecting nature is the highest form of preserving our culture."
+        title: "Manpur Unit Review Meeting",
+        desc: "An organizational review meeting of the Manpur unit for executive expansion, defining future welfare objectives and appointing new volunteers."
       },
       cleanliness: {
-        title: "Clean India Drive",
-        desc: "Fulfilling the father of the nation’s dream through consistent cleanliness campaigns, waste management drives, and civic responsibility education."
+        title: "Welcoming Civic Administration",
+        desc: "Met and welcomed the newly appointed SDM and Tehsildar with flower bouquets, pledging support for public welfare initiatives."
       },
       poor: {
-        title: "Dignity & Support Program",
-        desc: "Providing immediate dry rations, clothing, educational support, and healthcare access to underprivileged families, orphans, and shelter homes during crisis."
+        title: "Protest Against Power Crisis",
+        desc: "Led a successful town-wide shutdown (Manpur Bandh) to protest public representatives' neglect and submit a memorandum for electricity crisis resolution."
       },
       awareness: {
-        title: "Literacy & Intellectual Awakening",
-        desc: "Underprivileged children education kits, free coaching, and youth seminars to spark science, history, and patriotic consciousness."
+        title: "Fight for Farmers' Rights",
+        desc: "Submitted a strong memorandum to the Shahdol Commissioner demanding regular electricity supply for farmers and action against negligent grid operators."
       },
       women: {
-        title: "Women Safety & Self-Reliance",
-        desc: "Organizing martial-arts self-defense workshops, hosting safety awareness panels, and helping young women achieve true economic and social independence."
+        title: "Anti-Corruption Movement",
+        desc: "Submitted a formal petition to the Shahdol Commissioner demanding immediate transfer and inquiry of corrupt electricity department officials."
       }
     },
     quote: {

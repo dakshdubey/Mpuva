@@ -16,17 +16,30 @@ export default function ContactSection() {
     if (!formData.name || !formData.phone) return;
     
     setLoading(true);
-    // Simulate premium agency-level email delivery mock
+    
+    // Construct mailto link addressed to yuvasamajsena@gmail.com
+    const subject = encodeURIComponent(`MP Yuva Samaj Sena - Contact Form Message from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Phone: ${formData.phone}\n` +
+      `Email: ${formData.email || 'Not provided'}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
+      
+      // Redirect to mailto link
+      window.location.href = `mailto:yuvasamajsena@gmail.com?subject=${subject}&body=${body}`;
+      
       setFormData({ name: "", email: "", phone: "", message: "" });
       
       // Auto close success badge after 5 seconds
       setTimeout(() => {
         setSubmitted(false);
       }, 5000);
-    }, 2000);
+    }, 1500);
   };
 
   return (

@@ -128,7 +128,7 @@ export default function Navbar() {
 
             {/* Glowing CTA Button */}
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSf5x3zW7u8K8_7YV2J4J7D8E7H6-G3_example/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScLGleHL2fWh0xKLpiRh3pdNCABJXQV2ZPZ-6zZg-buEeh5oQ/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className="relative px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-[#ff5100] to-[#ff7700] overflow-hidden hover:from-[#ff7700] hover:to-[#ff5100] shadow-[0_4px_15px_rgba(255,81,0,0.2)] hover:shadow-[0_4px_20px_rgba(255,81,0,0.35)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer"
@@ -222,7 +222,7 @@ export default function Navbar() {
 
               {/* Mobile CTA */}
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSf5x3zW7u8K8_7YV2J4J7D8E7H6-G3_example/viewform"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScLGleHL2fWh0xKLpiRh3pdNCABJXQV2ZPZ-6zZg-buEeh5oQ/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}

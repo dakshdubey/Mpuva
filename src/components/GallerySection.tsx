@@ -25,181 +25,181 @@ export default function GallerySection() {
       id: 0,
       category: "service",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.18%20AM.jpeg",
-      titleHi: "सामूहिक अन्नपूर्णा सेवा शिविर",
-      titleEn: "Community Food Distribution Camp",
-      descHi: "भोपाल के वंचित बस्तियों में जरूरतमंदों को निःशुल्क पौष्टिक भोजन का वितरण करते हमारे समर्पित स्वयंसेवक।",
-      descEn: "Our volunteers distributing nutritional meals to underprivileged communities in Bhopal."
+      titleHi: "बिजली संकट के विरोध में नगर बंद",
+      titleEn: "Manpur Bandh Against Power Crisis",
+      descHi: "बिजली की गंभीर समस्या के खिलाफ मानपुर क्षेत्र में ऐतिहासिक बंद का सफल आयोजन। व्यापारियों व आम जनता का मिला भारी समर्थन।",
+      descEn: "Led a successful Manpur shutdown to protest severe power cuts, receiving massive support from local merchants and residents."
     },
     {
       id: 1,
       category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.22%20AM%20(1).jpeg",
-      titleHi: "युवा जांबाज सेना बैठक",
-      titleEn: "Youth Leadership Conclave",
-      descHi: "युवाओं में सामाजिक जागरूकता और राष्ट्र सेवा की भावना भरने के लिए इंदौर में आयोजित एक विशेष बौद्धिक संवाद।",
-      descEn: "A leadership conclave held in Indore to foster social awareness and nation building."
+      titleHi: "किसानों की बिजली हेतु कमिश्नर को ज्ञापन",
+      titleEn: "Memorandum for Farmers' Power Supply",
+      descHi: "मानपुर विधानसभा क्षेत्र के किसानों को समुचित बिजली न मिलने के खिलाफ शहडोल कमिश्नर को ज्ञापन सौंप कार्रवाई की मांग।",
+      descEn: "Submitted a petition to the Shahdol Commissioner demanding regular power supply for farmers facing irrigation challenges."
     },
     {
       id: 2,
-      category: "events",
+      category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.25%20AM%20(1).jpeg",
-      titleHi: "नर्मदा तट हरित क्रांति वृक्षारोपण",
-      titleEn: "Narmada Riverfront Plantation",
-      descHi: "मां नर्मदा के तटों को हरा-भरा बनाने के संकल्प के साथ स्वयंसेवकों द्वारा ५००० पौधों का सघन रोपण।",
-      descEn: "Plantation of over 5000 saplings along the holy Narmada river banks for eco preservation."
+      titleHi: "जेई के ट्रांसफर हेतु शहडोल आयुक्त को ज्ञापन",
+      titleEn: "Petition to Transfer Corrupt Officer",
+      descHi: "विद्युत मंडल में व्याप्त भ्रष्टाचार और अनियमितताओं के कारण जेई के स्थानांतरण और दंडात्मक कार्रवाई के लिए कमिश्नर को ज्ञापन।",
+      descEn: "Demanded immediate transfer and inquiry of the electricity board's Junior Engineer due to corruption and negligence."
     },
     {
       id: 3,
       category: "service",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.25%20AM.jpeg",
-      titleHi: "निर्धन बाल कल्याण - शिक्षा अभियान",
-      titleEn: "Underprivileged Children Education Support",
-      descHi: "ग्रामीण क्षेत्रों के जरूरतमंद बच्चों को पठन सामग्री, कॉपियां एवं बैग वितरित कर शिक्षा की अलख जगाती युवा सेना।",
-      descEn: "Spreading the light of literacy by distributing education kits to rural children."
+      titleHi: "मूलभूत सुविधाओं के लिए मानपुर में प्रदर्शन",
+      titleEn: "Protest for Basic Civic Amenities",
+      descHi: "पेयजल संकट, रुकी हुई नालियों की सफाई और क्षेत्र में लगातार हो रही चोरियों पर रोक लगाने हेतु जनपद सीईओ व टीआई को ज्ञापन।",
+      descEn: "Staged protests demanding clean drinking water, proper sanitation drainage, and control over thefts in Manpur."
     },
     {
       id: 4,
-      category: "events",
+      category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.29%20AM%20(1).jpeg",
-      titleHi: "स्वच्छता व श्रमदान महा-अभियान",
-      titleEn: "Mega Cleanliness & Labor Campaign",
-      descHi: "ग्वालियर के ऐतिहासिक स्थलों एवं जलाशयों की स्वच्छता के लिए श्रमदान करते हुए युवा समाज सेना के साहसी जांबाज।",
-      descEn: "Volunteers contributing manual labor for cleaning heritage landmarks and water resources in Gwalior."
+      titleHi: "पीड़ित महिला को न्याय दिलाने हेतु ज्ञापन",
+      titleEn: "Seeking Justice for Harassed Woman",
+      descHi: "चिल्हारी में एक आरआई द्वारा प्रताड़ित संगीता साहू को न्याय दिलाने और मामले की निष्पक्ष जांच के लिए एसपी कार्यालय में प्रदर्शन।",
+      descEn: "Demonstrated at the SP and Collector office seeking a fair investigation and justice for a harassed local woman."
     },
     {
       id: 5,
-      category: "volunteers",
+      category: "service",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.29%20AM.jpeg",
-      titleHi: "आपदा राहत कार्यशाला व प्रशिक्षण",
-      titleEn: "Disaster Management & Safety Workshop",
-      descHi: "बाढ़, भूकंप जैसी आपातकालीन स्थितियों में तुरंत सक्रिय होने के लिए स्वयंसेवकों का विशेष तकनीकी बचाव प्रशिक्षण।",
-      descEn: "Specialized disaster rescue and management training for active community response teams."
+      titleHi: "पेयजल व चोरी से मुक्ति की मांग",
+      titleEn: "Demanding Water Supply & Security",
+      descHi: "सोनी मोहल्ला व वार्ड नंबर 7 में पेयजल आपूर्ति बहाल करने तथा लगातार हो रही चोरियों के खिलाफ मानपुर सीईओ को सौंपा गया ज्ञापन।",
+      descEn: "Submitted a formal memorandum to the CEO to restore basic water utilities and curb recurring thefts in local wards."
     },
     {
       id: 6,
-      category: "service",
+      category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.30%20AM.jpeg",
-      titleHi: "आपातकालीन रक्तदान शिविर",
-      titleEn: "Emergency Blood Donation Camp",
-      descHi: "विभिन्न अस्पतालों में गंभीर मरीजों की सहायता हेतु आयोजित रक्तदान शिविर।",
-      descEn: "Blood donation camp organized to assist critical patients in local hospitals."
+      titleHi: "युवा समाज सेना मानपुर का जनसंपर्क",
+      titleEn: "Manpur Unit Public Relations",
+      descHi: "मानपुर ब्लॉक क्षेत्र में संगठन के प्रचार-प्रसार और सामाजिक मुद्दों पर जन-जागरण हेतु सक्रिय कार्यकर्ताओं का सामूहिक अभियान।",
+      descEn: "Active community mobilization and public awareness campaign by the volunteers of the Manpur block unit."
     },
     {
       id: 7,
-      category: "events",
+      category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.31%20AM.jpeg",
-      titleHi: "नारी सुरक्षा व स्वावलंबन अभियान",
-      titleEn: "Women Safety & Empowerment Drive",
-      descHi: "महिलाओं को जागरूक करने एवं उनके अधिकारों के सम्मान के लिए जन-जागरण रैली।",
-      descEn: "Public awareness rally promoting women safety and empowerment rights."
+      titleHi: "स्थानीय पुलिस प्रशासन को ज्ञापन",
+      titleEn: "Memorandum to Local Police",
+      descHi: "नगर की कानून व्यवस्था दुरुस्त करने और लगातार हो रही चोरियों पर लगाम लगाने के लिए स्थानीय पुलिस प्रशासन को लिखा गया पत्र।",
+      descEn: "Handed over a petition to police officials requesting increased security patrols and swift action on thefts."
     },
     {
       id: 8,
-      category: "volunteers",
+      category: "events",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.32%20AM%20(1).jpeg",
-      titleHi: "युवा जांबाज संवाद",
-      titleEn: "Youth Warriors Dialogue",
-      descHi: "स्वयंसेवकों के साथ संगठनात्मक चर्चा और भावी समाज सेवा योजनाओं का रेखांकन।",
-      descEn: "Organizational discussion with volunteers outlining future welfare action plans."
+      titleHi: "मेधावी छात्र-छात्राओं का सम्मान",
+      titleEn: "Facilitating Talented Students",
+      descHi: "गणतंत्र दिवस के पावन अवसर पर मानपुर क्षेत्र के मेधावी छात्र-छात्राओं को प्रशस्ति पत्र एवं पुरस्कार देकर सम्मानित करते मुख्य अतिथि।",
+      descEn: "Honoring bright school children with certificates and prizes for academic and co-curricular excellence on Republic Day."
     },
     {
       id: 9,
-      category: "service",
+      category: "events",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.32%20AM.jpeg",
-      titleHi: "निःशुल्क स्वास्थ्य चिकित्सा शिविर",
-      titleEn: "Free Healthcare & Medical Camp",
-      descHi: "ग्रामीण क्षेत्रों में निःशुल्क स्वास्थ्य परीक्षण और दवाइयों का वितरण।",
-      descEn: "Free health checkups and medicine distribution in remote rural locations."
+      titleHi: "गणतंत्र दिवस समारोह व बैठक",
+      titleEn: "Republic Day Celebration & Assembly",
+      descHi: "संगठन द्वारा आयोजित गणतंत्र दिवस समारोह के मंच पर उपस्थित विशिष्ट जन एवं वरिष्ठ समाजसेवक।",
+      descEn: "Dignitaries and senior social workers gathered on the main stage of the organization's Republic Day ceremony."
     },
     {
       id: 10,
-      category: "events",
+      category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.33%20AM%20(1).jpeg",
-      titleHi: "सघन वृक्षारोपण अभियान",
-      titleEn: "Intensive Tree Plantation Campaign",
-      descHi: "पर्यावरण संरक्षण को बढ़ावा देने के लिए ५००० से अधिक वृक्षों का सघन रोपण।",
-      descEn: "Plantation of over 5000 saplings for raising green environmental awareness."
+      titleHi: "मानपुर ब्लॉक ईकाई की समीक्षा बैठक",
+      titleEn: "Manpur Unit Review Meeting",
+      descHi: "मानपुर कार्यालय में संगठन की कार्यकारिणी का विस्तार, नए पदाधिकारियों को जिम्मेदारियों का आवंटन व सेवा संकल्प बैठक।",
+      descEn: "Held an executive expansion meeting to appoint new block office-bearers and outline future service actions."
     },
     {
       id: 11,
       category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.33%20AM.jpeg",
-      titleHi: "संगठनात्मक युवा कार्यकर्ता बैठक",
-      titleEn: "Organizational Youth Volunteers Meet",
-      descHi: "बौद्धिक विकास एवं सामाजिक मूल्यों के प्रति प्रतिबद्धता पर विशेष संवाद।",
-      descEn: "Special assembly on intellectual development and social welfare values."
+      titleHi: "थाना प्रभारी का स्वागत एवं अभिनंदन",
+      titleEn: "Honoring the Station House Officer",
+      descHi: "नवनियुक्त थाना प्रभारी का मानपुर कार्यालय में स्वागत एवं कानून व्यवस्था में पुलिस प्रशासन के सहयोग का संगठन द्वारा आश्वासन।",
+      descEn: "Welcomed and facilitated the newly appointed Station House Officer, assuring community support for law enforcement."
     },
     {
       id: 12,
-      category: "service",
+      category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.34%20AM%20(1).jpeg",
-      titleHi: "वंचित कल्याण सेवा वितरण",
-      titleEn: "Underprivileged Support Distribution",
-      descHi: "आर्थिक रूप से कमजोर परिवारों को खाद्य सामग्री किट की आपूर्ति।",
-      descEn: "Distribution of food ration kits to economically weaker families."
+      titleHi: "पुलिस के साथ रात्रि सुरक्षा गश्ती",
+      titleEn: "Night Security Patrol with Police",
+      descHi: "नगर में चोरियों को रोकने के लिए थाना प्रभारी के निर्देशानुसार पुलिस के साथ रात्रि गश्त में शामिल युवा सेना के जांबाज।",
+      descEn: "Volunteers joining forces with local police officers during late-night security patrols to ensure town safety."
     },
     {
       id: 13,
-      category: "events",
+      category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.34%20AM%20(2).jpeg",
-      titleHi: "स्वच्छ भारत जनचेतना श्रमदान",
-      titleEn: "Swachh Bharat Cleanliness Drive",
-      descHi: "स्वयंसेवकों द्वारा तालाबों और सार्वजनिक स्थानों की सघन स्वच्छता।",
-      descEn: "Deep cleanliness drive of lakes and public sites by active volunteers."
+      titleHi: "रात्रि सुरक्षा एवं गश्ती दल",
+      titleEn: "Night Patrol Volunteers Group",
+      descHi: "सघन सुरक्षा गश्ती अभियान के उपरांत मानपुर बस स्टैंड पर पुलिस प्रशासन के साथ तैनात जांबाज स्वयंसेवक।",
+      descEn: "Volunteers on alert during our community security drive at the bus stand to prevent public thefts."
     },
     {
       id: 14,
-      category: "volunteers",
+      category: "events",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.35%20AM%20(1).jpeg",
-      titleHi: "आपातकालीन राहत स्वयंसेवक प्रशिक्षण",
-      titleEn: "Emergency Relief Volunteers Training",
-      descHi: "प्राकृतिक आपदाओं के समय त्वरित राहत कार्यों का तकनीकी प्रशिक्षण।",
-      descEn: "Technical rescue and relief operations training for emergencies."
+      titleHi: "नवनियुक्त एसडीएम एवं तहसीलदार से भेंट",
+      titleEn: "Civic Meeting with SDM & Tehsildar",
+      descHi: "मानपुर के नवनियुक्त एसडीएम एवं तहसीलदार से शिष्टाचार मुलाकात कर बुके भेंट कर बधाई दी गई।",
+      descEn: "Met the newly appointed Sub-Divisional Magistrate (SDM) and Tehsildar to discuss regional development."
     },
     {
       id: 15,
-      category: "service",
+      category: "events",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.35%20AM.jpeg",
-      titleHi: "वस्त्र वितरण एवं दीनबंधु सेवा",
-      titleEn: "Clothes Distribution Program",
-      descHi: "ठंड के मौसम में जरूरतमंद परिवारों को कंबल और गर्म कपड़ों का वितरण।",
-      descEn: "Distribution of warm blankets and clothes to needy families during winter."
+      titleHi: "प्रशासनिक अधिकारियों का पुष्पगुच्छ से स्वागत",
+      titleEn: "Welcoming Administrative Officials",
+      descHi: "मानपुर के विकास कार्यों में प्रशासन को सदैव संगठन की ओर से सहयोग देने का वचन देते हुए पुष्पगुच्छ भेंट किया।",
+      descEn: "Presented a floral bouquet to welcome new officers, committing our youth network to support local administrative tasks."
     },
     {
       id: 16,
-      category: "events",
+      category: "service",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.36%20AM%20(1).jpeg",
-      titleHi: "आत्मरक्षा प्रशिक्षण शिविर",
-      titleEn: "Self-Defense Training Workshop",
-      descHi: "बालिकाओं और युवतियों को सशक्त बनाने हेतु आत्मरक्षा कला का व्यावहारिक प्रशिक्षण।",
-      descEn: "Practical self-defense training to empower young girls and women."
+      titleHi: "गर्भवती व प्रसूती महिलाओं को फल वितरण",
+      titleEn: "Nutritional Fruit Distribution to Mothers",
+      descHi: "मानपुर सामुदायिक स्वास्थ्य केंद्र में भर्ती नवजात शिशुओं की माताओं को ताजे फलों व पोषण किट का निःशुल्क वितरण।",
+      descEn: "Distributing fresh fruits and nutritional kits to pregnant and new mothers at the Community Health Center."
     },
     {
       id: 17,
-      category: "volunteers",
+      category: "service",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.36%20AM.jpeg",
-      titleHi: "युवा समाज सेना इंदौर सम्मेलन",
-      titleEn: "Yuva Samaj Sena Indore Meet",
-      descHi: "मालवा क्षेत्र के युवा कार्यकर्ताओं की भव्य विचार गोष्ठी एवं सम्मान समारोह।",
-      descEn: "Indore regional youth volunteers assembly and honor ceremony."
+      titleHi: "सामुदायिक स्वास्थ्य केंद्र में फल वितरण",
+      titleEn: "Hospital Support & Welfare Program",
+      descHi: "मरीजों एवं प्रसूती माताओं के बेहतर स्वास्थ्य की मंगल कामना करते हुए फल वितरण एवं स्वास्थ्य देखभाल प्रोत्साहन।",
+      descEn: "Spreading joy and health encouragement by organizing fruit distribution drives in community hospitals."
     },
     {
       id: 18,
-      category: "service",
+      category: "events",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.37%20AM%20(1).jpeg",
-      titleHi: "रक्तदान महादान जीवन रक्षक अभियान",
-      titleEn: "Mega Blood Donation Campaign",
-      descHi: "हजारों स्वयंसेवकों द्वारा एक ही स्थान पर भव्य रक्तदान श्रृंखला का निर्माण।",
-      descEn: "Mega blood donation chain executed at a single venue by thousands of volunteers."
+      titleHi: "विमान हादसे के पीड़ितों हेतु कैंडल मार्च",
+      titleEn: "Candle March for Plane Crash Victims",
+      descHi: "अहमदाबाद विमान हादसे में जान गंवाने वाले दिवंगत यात्रियों की आत्मिक शांति के लिए बस स्टैंड पर निकाला गया कैंडल मार्च।",
+      descEn: "Expressing deep grief and solidary by holding a candlelight march for victims of a tragic aviation accident."
     },
     {
       id: 19,
       category: "events",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.37%20AM.jpeg",
-      titleHi: "जल संरक्षण व नदी तट सफाई अभियान",
-      titleEn: "Water Conservation & Riversides Cleanliness",
-      descHi: "जलाशयों के संरक्षण एवं कचरा मुक्त करने का दृढ़ सामूहिक संकल्प।",
-      descEn: "Deep community resolution for cleaning and preserving local water bodies."
+      titleHi: "वीर शिरोमणि महाराणा प्रताप जयंती",
+      titleEn: "Maharana Pratap Jayanti Celebration",
+      descHi: "महाराणा प्रताप जी की जयंती पर मानपुर बस स्टैंड में भव्य कार्यक्रम, उनकी शौर्य गाथा और देशभक्ति के संकल्पों का पाठ।",
+      descEn: "Celebrating the birth anniversary of Maharana Pratap at the bus stand to inspire local youth with valor."
     }
   ];
 

@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "./LanguageContext";
-import { Droplet, Leaf, Trash2, HeartHandshake, Map } from "lucide-react";
+import { Scale, Heart, Shield, Trophy, Flame } from "lucide-react";
 
 interface StatItem {
   id: string;
@@ -20,49 +20,49 @@ export default function StatsSection() {
 
   const stats: StatItem[] = [
     {
-      id: "blood",
-      icon: <Droplet size={24} className="text-[#ff5100]" />,
-      value: "12,400+",
-      labelHi: "रक्तदान जीवनदान",
-      labelEn: "Blood Units Donated",
-      descHi: "आपातकालीन समय में भोपाल व आसपास के जिलों में जीवन बचाने के लिए की गई रक्तदान आपूर्ति।",
-      descEn: "Successful units supplied to save critical lives across Bhopal and nearby districts."
+      id: "memorandums",
+      icon: <Scale size={24} className="text-[#ff5100]" />,
+      value: "15+",
+      labelHi: "ज्ञापन एवं जन-आवाज",
+      labelEn: "Memorandums & Public Voices",
+      descHi: "बिजली संकट, पेयजल संकट, चोरी पर लगाम और भ्रष्टाचार के खिलाफ प्रशासनिक अधिकारियों को सौंपे गए प्रमुख ज्ञापन।",
+      descEn: "Major memorandums submitted to SDM, CEO, SP, and Commissioner addressing electricity, water, security, and corruption issues."
     },
     {
-      id: "trees",
-      icon: <Leaf size={24} className="text-[#10b981]" />,
-      value: "55,000+",
-      labelHi: "हरित वृक्षारोपण",
-      labelEn: "Trees Planted",
-      descHi: "नर्मदा तटों और सार्वजनिक स्थलों पर पर्यावरण संरक्षण के लिए लगाए गए फलदार व छायादार पौधे।",
-      descEn: "Saplings planted across riversides and public domains for eco preservation."
+      id: "maternity",
+      icon: <Heart size={24} className="text-[#ec4899]" />,
+      value: "150+",
+      labelHi: "मातृत्व एवं प्रसूति कल्याण",
+      labelEn: "Maternity Welfare & Support",
+      descHi: "सामुदायिक स्वास्थ्य केंद्र में भर्ती गर्भवती व प्रसूती महिलाओं को पोषक फल वितरण एवं स्वास्थ्य देखभाल प्रोत्साहन।",
+      descEn: "Nutritional fruit kits and healthcare encouragement distributed to pregnant and lactating mothers at community hospitals."
     },
     {
-      id: "clean",
-      icon: <Trash2 size={24} className="text-[#3b82f6]" />,
-      value: "180+",
-      labelHi: "स्वच्छता अभियान",
-      labelEn: "Sanitation Drives",
-      descHi: "विभिन्न नगरों के ऐतिहासिक स्थलों, नदियों और पार्कों में स्वयंसेवकों द्वारा निरंतर श्रमदान।",
-      descEn: "Cleanliness drives executed in historical heritage spots, parks, and rivers."
+      id: "patrols",
+      icon: <Shield size={24} className="text-[#3b82f6]" />,
+      value: "30+",
+      labelHi: "सुरक्षा एवं रात्रि गश्त",
+      labelEn: "Security & Night Patrols",
+      descHi: "स्थानीय पुलिस प्रशासन के सहयोग से नगर में चोरियों को रोकने हेतु स्वयंसेवकों द्वारा रात में सघन गश्ती अभियान।",
+      descEn: "Intensive night patrolling operations carried out by our volunteers in collaboration with local police to prevent thefts."
     },
     {
-      id: "support",
-      icon: <HeartHandshake size={24} className="text-[#f59e0b]" />,
-      value: "8,500+",
-      labelHi: "दीनबंधु सहायता",
-      labelEn: "Families Supported",
-      descHi: "निर्धन परिवारों को खाद्यान्न, वस्त्र और बच्चों को पठन सामग्री वितरित कर सामाजिक मदद।",
-      descEn: "Underprivileged families supported with rations, clothes, and school kits."
+      id: "sports",
+      icon: <Trophy size={24} className="text-[#f59e0b]" />,
+      value: "50+",
+      labelHi: "खेल एवं प्रतिभा प्रोत्साहन",
+      labelEn: "Sports & Talent Honors",
+      descHi: "राष्ट्रीय पर्वों पर छात्र-छात्राओं का सम्मान, खेल एवं पारंपरिक कुश्ती दंगल प्रतियोगिताओं का सफल आयोजन।",
+      descEn: "Facilitating bright students on national days and organizing traditional wrestling (Dangal) tournaments for physical fitness."
     },
     {
-      id: "districts",
-      icon: <Map size={24} className="text-[#ff7700]" />,
-      value: "25+",
-      labelHi: "सक्रिय जिले",
-      labelEn: "Active Districts",
-      descHi: "मध्य प्रदेश के जिलों में फैले ऊर्जावान युवाओं का एक विशाल और अनुशासित संगठन नेटवर्क।",
-      descEn: "Districts fully mobilized with our disciplined network of young volunteers."
+      id: "national",
+      icon: <Flame size={24} className="text-[#ff7700]" />,
+      value: "12+",
+      labelHi: "राष्ट्रीय चेतना व सेवा",
+      labelEn: "National Consciousness",
+      descHi: "वीर शिरोमणि महाराणा प्रताप जयंती जैसे ऐतिहासिक पर्वों का आयोजन और राष्ट्रीय विपदाओं में कैंडल मार्च द्वारा संवेदना।",
+      descEn: "Commemorating historical legends like Maharana Pratap Jayanti and holding candle marches in support of national tragedies."
     }
   ];
 
