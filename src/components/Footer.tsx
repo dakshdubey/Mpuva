@@ -40,7 +40,7 @@ export default function Footer() {
     { href: "https://instagram.com", icon: <InstagramIcon />, label: "Instagram" },
     { href: "https://facebook.com",  icon: <FacebookIcon />,  label: "Facebook"  },
     { href: "https://youtube.com",   icon: <YoutubeIcon />,   label: "YouTube"   },
-    { href: "https://wa.me/919876543210", icon: <WhatsAppIcon />, label: "WhatsApp" },
+    { href: "https://wa.me/9131954342", icon: <WhatsAppIcon />, label: "WhatsApp" },
   ];
 
   const quickLinks = [

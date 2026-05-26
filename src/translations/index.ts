@@ -413,7 +413,7 @@ export const translations: Record<'hi' | 'en', TranslationSet> = {
       addressTitle: "Headquarters",
       addressValue: "Gaur, Sadar Road, Mahakoshal Province, Jabalpur, District - Jabalpur (M.P.) 482001",
       phoneTitle: "Helpline Numbers",
-      phoneValue: "+91 98765 43210, +91 755 123456",
+      phoneValue: "+91 91319 54342",
       emailTitle: "Email Address",
       emailValue: "yuvasamajsena@gmail.com",
       socialTitle: "Follow Our Journey"
