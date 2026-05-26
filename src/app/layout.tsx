@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   keywords: ["मध्य प्रदेश युवा समाज सेना", "MP Yuva Samaj Sena", "Youth Welfare", "Blood Donation MP", "NGO Madhya Pradesh", "Social Service Bhopal"],
   authors: [{ name: "MP Yuva Samaj Sena" }],
   icons: {
-    icon: "/favicon.ico",
+    icon: "/logo.jpeg",
   },
   openGraph: {
     title: "मध्य प्रदेश युवा समाज सेना | MP Yuva Samaj Sena",

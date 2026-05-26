@@ -68,8 +68,8 @@ export default function Footer() {
               href="/"
               className="flex items-center gap-2.5 cursor-pointer group text-left"
             >
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#ff5100] to-[#ff7700] flex items-center justify-center shadow-[0_4px_15px_rgba(255,81,0,0.25)]">
-                <Heart size={16} className="text-white" />
+              <div className="relative w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-[0_4px_15px_rgba(0,0,0,0.06)] group-hover:scale-105 transition-all duration-300 overflow-hidden border border-slate-100 p-0.5 shrink-0">
+                <img src="/logo.jpeg" alt="MPYSS Logo" className="w-full h-full object-cover rounded-lg" />
               </div>
               <div>
                 <span className="font-hindi text-base font-black tracking-wide text-slate-900 group-hover:text-[#ff7700] transition-colors duration-300 block">

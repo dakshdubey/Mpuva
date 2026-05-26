@@ -77,38 +77,20 @@ export interface TranslationSet {
   constitution: {
     title: string;
     subtitle: string;
-    sec1_title: string;
-    sec1_name: string;
-    sec2_title: string;
-    sec2_village: string;
-    sec2_tehsil: string;
-    sec2_district: string;
-    sec2_state: string;
-    sec3_title: string;
-    sec3_text: string;
-    sec4_title: string;
-    sec4_points: string[];
-    sec5_title: string;
-    sec5_text: string;
-    sec6_title: string;
-    sec6_points: string[];
-    sec7_title: string;
-    sec7_positions: string[];
-    sec8_title: string;
-    sec8_roles: { title: string; desc: string }[];
-    sec9_title: string;
-    sec9_points: string[];
-    sec10_title: string;
-    sec10_points: string[];
-    sec11_title: string;
-    sec11_points: string[];
-    sec12_title: string;
-    sec12_text: string;
-    sec13_title: string;
-    sec13_text: string;
-    sec14_title: string;
-    sec14_text: string;
-    sec14_sig: string;
+    preambleTitle: string;
+    preambleText: string;
+    oathTitle: string;
+    oathText: string;
+    oathSig: string;
+    regLabel: string;
+    chapters: {
+      id: number;
+      title: string;
+      iconType: "landmark" | "shield" | "book" | "check" | "alert" | "edit" | "pen";
+      type: "text" | "points";
+      text?: string;
+      points?: string[];
+    }[];
   };
 }
 
@@ -133,8 +115,8 @@ export const translations: Record<'hi' | 'en', TranslationSet> = {
     story: {
       sectionTitle: "हमारी गाथा",
       sectionSubtitle: "एक आंदोलन की शुरुआत",
-      originTitle: "विचारधारा का जन्म",
-      originText: "मध्य प्रदेश युवा समाज सेना की नींव केवल एक संगठन के रूप में नहीं, बल्कि समाज के अंतिम छोर पर खड़े व्यक्ति की सेवा के लिए एक संकल्प के रूप में रखी गई थी। जब भी समाज को आवश्यकता हुई, युवाओं ने आगे बढ़कर नेतृत्व किया। हमारा मानना है कि देश की असली ताकत उसकी युवा ऊर्जा में निहित है।",
+      originTitle: "विचारधारा का जन्म व संस्थापना",
+      originText: "“मध्य प्रदेश युवा समाज सेना” का उदय कोरोना महामारी के कठिन काल में दिनांक 20 जून 2020 को हुआ। संगठन ने सर्वप्रथम मध्य प्रदेश के Umaria जिले की Manpur तहसील में सक्रिय रूप से समाज सेवा एवं जनसहयोग का कार्य प्रारंभ किया। विपरीत परिस्थितियों में मानव सेवा को सर्वोच्च धर्म मानते हुए संगठन निरंतर समाजहित एवं राष्ट्रहित में आगे बढ़ने हेतु प्रयासरत है। हम सभी सामाजिक, राष्ट्रीय एवं मानवीय मूल्यों में विश्वास रखने वाले युवा, समाज में समानता, एकता, सहयोग, न्याय एवं मानवता की भावना को सुदृढ़ करने हेतु इस संगठन की स्थापना करते हैं।",
       youthTitle: "युवा सशक्तिकरण",
       youthText: "हमारा उद्देश्य केवल सेवा करना नहीं, बल्कि युवाओं के भीतर नेतृत्व क्षमता और सामाजिक चेतना का निर्माण करना है। हम युवाओं को आत्मनिर्भर, चरित्रवान और राष्ट्रभक्त नागरिक बनाने की दिशा में काम करते हैं ताकि वे विकास की मुख्यधारा में अपना योगदान दे सकें।",
       unityTitle: "सामाजिक अखंडता",
@@ -193,116 +175,160 @@ export const translations: Record<'hi' | 'en', TranslationSet> = {
       formSubmit: "संदेश भेजें",
       formSuccess: "आपका संदेश सफलतापूर्वक प्राप्त हुआ! हम जल्द ही आपसे संपर्क करेंगे।",
       addressTitle: "प्रधान कार्यालय",
-      addressValue: "१०२, युवा शक्ति भवन, मालवीय नगर, भोपाल, मध्य प्रदेश - ४६२००३",
+      addressValue: "गौर, सदर रोड, महाकौशल प्रान्त, जबलपुर, जिला - जबलपुर (म. प्र.) 482001",
       phoneTitle: "संपर्क सूत्र",
-      phoneValue: "+९१ ९८७६५ ४३२१०, +९१ ७५५ १२३४५६",
+      phoneValue: "+91 98765 43210, +91 755 123456",
       emailTitle: "ईमेल",
-      emailValue: "sampark@mpyuvass.org",
+      emailValue: "yuvasamajsena@gmail.com",
       socialTitle: "सोशल मीडिया पर हमें फॉलो करें"
     },
     footer: {
-      slogan: "एक कदम समाज सेवा की ओर - राष्ट्र प्रथम, सेवा सर्वोपरि",
+      slogan: "एक कदम समाज सेवा की ओर - मानवता • एकता • संगठन • सम्मान",
       quickLinks: "त्वरित लिंक्स",
       contactUs: "संपर्क विवरण",
-      devCredit: "डिजाइन और विकसित: एलीट टेक लैब्स",
+      devCredit: "पंजीयन क्र.:- 04/14/01/19559/18 (आशीष छाया बहुउद्देशीय समिति द्वारा संचालित)",
       rights: "सर्वाधिकार सुरक्षित।"
     },
     constitution: {
       title: "व्यावसायिक संविधान एवं नियमावली",
       subtitle: "मध्य प्रदेश युवा समाज सेना की आधिकारिक विनियामक संहिता",
-      sec1_title: "१. संगठन का नाम",
-      sec1_name: "“मध्य प्रदेश युवा समाज सेना” (MP Yuva Samaj Sena)",
-      sec2_title: "२. मुख्य कार्यालय",
-      sec2_village: "ग्राम/नगर: मालवीय नगर, भोपाल",
-      sec2_tehsil: "तहसील: हुजूर",
-      sec2_district: "जिला: भोपाल",
-      sec2_state: "राज्य: मध्य प्रदेश",
-      sec3_title: "३. संगठन की प्रकृति",
-      sec3_text: "“मध्य प्रदेश युवा समाज सेना” एक गैर-राजनीतिक, गैर-लाभकारी एवं समाजसेवी संगठन होगा, जिसका उद्देश्य समाजहित, जनकल्याण एवं युवाओं को सामाजिक कार्यों से जोड़ना होगा।",
-      sec4_title: "४. संगठन के मुख्य उद्देश्य",
-      sec4_points: [
-        "समाज में शिक्षा एवं जागरूकता को बढ़ावा देना।",
-        "गरीब, असहाय एवं जरूरतमंद लोगों की सहायता करना।",
-        "रक्तदान शिविर, स्वास्थ्य शिविर एवं जनकल्याण कार्यक्रम आयोजित करना।",
-        "युवाओं को नशामुक्ति एवं सामाजिक जिम्मेदारी के प्रति जागरूक करना।",
-        "पर्यावरण संरक्षण एवं स्वच्छता अभियान चलाना।",
-        "सामाजिक एकता, भाईचारा एवं राष्ट्रहित की भावना को मजबूत करना।",
-        "प्रशासन तक जनसमस्याओं को शांतिपूर्ण एवं संवैधानिक तरीके से पहुँचाना।",
-        "प्राकृतिक आपदा एवं आपातकालीन परिस्थितियों में राहत कार्य करना।",
-        "बेरोजगार युवाओं को स्वरोजगार एवं कौशल विकास हेतु प्रेरित करना।",
-        "महिला सुरक्षा एवं सम्मान के प्रति जागरूकता फैलाना।"
-      ],
-      sec5_title: "५. संगठन का मूल सिद्धांत",
-      sec5_text: "“सेवा • संगठन • सम्मान • राष्ट्रहित”",
-      sec6_title: "६. सदस्यता नियम",
-      sec6_points: [
-        "18 वर्ष या उससे अधिक आयु का कोई भी भारतीय नागरिक सदस्य बन सकता है।",
-        "सदस्य का आचरण सामाजिक एवं सम्मानजनक होना चाहिए।",
-        "संगठन विरोधी या कानून विरोधी गतिविधियों पर सदस्यता समाप्त की जा सकती है।",
-        "सदस्यता शुल्क एवं पहचान पत्र का निर्धारण कार्यकारिणी द्वारा किया जाएगा।",
-        "सभी सदस्यों को संगठन के नियमों का पालन करना अनिवार्य होगा।"
-      ],
-      sec7_title: "७. संगठनात्मक संरचना (प्रमुख पद)",
-      sec7_positions: [
-        "संरक्षक",
-        "प्रदेश अध्यक्ष",
-        "प्रदेश उपाध्यक्ष",
-        "प्रदेश सचिव",
-        "सह सचिव",
-        "कोषाध्यक्ष",
-        "मीडिया प्रभारी",
-        "संगठन मंत्री",
-        "जिला अध्यक्ष",
-        "ब्लॉक अध्यक्ष",
-        "कार्यकारिणी सदस्य"
-      ],
-      sec8_title: "८. पदाधिकारियों के कार्य",
-      sec8_roles: [
+      preambleTitle: "संशोधित प्रस्तावना (Preamble)",
+      preambleText: "हम सभी सामाजिक, राष्ट्रीय एवं मानवीय मूल्यों में विश्वास रखने वाले युवा, समाज में समानता, एकता, सहयोग, न्याय एवं मानवता की भावना को सुदृढ़ करने हेतु “मध्य प्रदेश युवा समाज सेना” संगठन की स्थापना करते हैं।\n\nयह संगठन मानवतावाद, सामाजिक उत्थान, भाईचारा, अनुशासन एवं जनसेवा के सिद्धांतों पर कार्य करेगा।\n\n“मध्य प्रदेश युवा समाज सेना” का उदय कोरोना महामारी के कठिन काल में दिनांक 20 जून 2020 को हुआ। संगठन ने सर्वप्रथम मध्य प्रदेश के Umaria जिले की Manpur तहसील में सक्रिय रूप से समाज सेवा एवं जनसहयोग का कार्य प्रारंभ किया। विपरीत परिस्थितियों में मानव सेवा को सर्वोच्च धर्म मानते हुए संगठन निरंतर समाजहित एवं राष्ट्रहित में आगे बढ़ने हेतु प्रयासरत है।\n\nसंगठन का उद्देश्य समाज के प्रत्येक व्यक्ति की समस्या को अपनी सामूहिक जिम्मेदारी मानते हुए उसके समाधान हेतु संघर्ष एवं सहयोग करना होगा।\n\nहम यह संकल्प लेते हैं कि संगठन सदैव मानवता, एकता, सम्मान एवं सामाजिक न्याय के मार्ग पर कार्य करता रहेगा।",
+      oathTitle: "घोषणा एवं संकल्प",
+      oathText: "“हम सभी सदस्य यह संकल्प लेते हैं कि हम संगठन की गरिमा, अनुशासन एवं मानवतावादी सिद्धांतों का पालन करेंगे तथा समाजहित एवं राष्ट्रहित में सदैव कार्य करेंगे।”",
+      oathSig: "सदस्य के हस्ताक्षर",
+      regLabel: "पंजीयन क्र.:- 04/14/01/19559/18 (आशीष छाया बहुउद्देशीय समिति द्वारा संचालित)",
+      chapters: [
         {
-          title: "प्रदेश अध्यक्ष",
-          desc: "संगठन का नेतृत्व करेगा एवं सभी बैठकों की अध्यक्षता करेगा।"
+          id: 1,
+          title: "अध्याय – 1 : संगठन का नाम एवं स्वरूप",
+          iconType: "landmark",
+          type: "points",
+          points: [
+            "धारा 1 : नाम — संगठन का नाम “मध्य प्रदेश युवा समाज सेना” (Madhya Pradesh Yuva Samaj Sena) होगा।",
+            "धारा 2 : स्वरूप — यह एक सामाजिक, गैर-राजनीतिक एवं मानवतावादी संगठन होगा।",
+            "धारा 3 : मुख्यालय — संगठन का केंद्रीय मुख्यालय मध्य प्रदेश में स्थित होगा, जिसका निर्धारण केंद्रीय कार्य समिति करेगी।"
+          ]
         },
         {
-          title: "प्रदेश सचिव",
-          desc: "संगठन के प्रशासनिक कार्य, आधिकारिक दस्तावेज एवं पत्राचार संभालेगा।"
+          id: 2,
+          title: "अध्याय – 2 : उद्देश्य",
+          iconType: "book",
+          type: "points",
+          points: [
+            "समाज में मानवता, एकता एवं भाईचारे की भावना को बढ़ावा देना।",
+            "समाज के जरूरतमंद एवं पीड़ित व्यक्तियों की सहायता करना।",
+            "युवाओं को सामाजिक नेतृत्व एवं संगठनात्मक शक्ति प्रदान करना।",
+            "शिक्षा, स्वास्थ्य, रोजगार एवं सामाजिक न्याय के लिए कार्य करना।",
+            "किसी भी सदस्य की समस्या को सम्पूर्ण संगठन की समस्या मानते हुए उसके समाधान हेतु सामूहिक प्रयास करना।",
+            "समाज में व्याप्त कुरीतियों एवं अन्याय के विरुद्ध आवाज उठाना।",
+            "राष्ट्रहित एवं समाजहित सर्वोपरि रखना।"
+          ]
         },
         {
-          title: "कोषाध्यक्ष",
-          desc: "संगठन के आय-व्यय एवं वित्तीय रिकॉर्ड का संधारण करेगा।"
+          id: 3,
+          title: "अध्याय – 3 : संगठन के सिद्धांत",
+          iconType: "shield",
+          type: "points",
+          points: [
+            "धारा 1 : मानवतावाद सिद्धांत — संगठन पूर्ण रूप से मानवतावादी विचारधारा पर आधारित होगा। जाति, धर्म, वर्ग, क्षेत्र या भाषा के आधार पर कोई भेदभाव नहीं किया जाएगा।",
+            "धारा 2 : सामूहिक उत्तरदायित्व — संगठन से जुड़े किसी भी सदस्य की व्यक्तिगत, सामाजिक या कानूनी समस्या को संगठन अपनी सामूहिक जिम्मेदारी मानेगा एवं यथासंभव सहायता करेगा।",
+            "धारा 3 : अनुशासन सर्वोपरि — संगठन में अनुशासन सर्वोच्च माना जाएगा। संगठन विरोधी गतिविधि, गुटबाजी अथवा संगठन की गरिमा को ठेस पहुँचाने वाला कार्य दंडनीय होगा।"
+          ]
         },
         {
-          title: "मीडिया प्रभारी",
-          desc: "सोशल मीडिया, प्रचार-प्रसार एवं जनसंपर्क कार्य देखेगा।"
+          id: 4,
+          title: "अध्याय – 4 : सदस्यता",
+          iconType: "check",
+          type: "points",
+          points: [
+            "धारा 1 : सदस्यता पात्रता — 18 वर्ष या उससे अधिक आयु का कोई भी व्यक्ति संगठन की सदस्यता ग्रहण कर सकता है।",
+            "धारा 2 : सदस्यता समाप्ति — निम्न परिस्थितियों में सदस्यता समाप्त की जा सकेगी— संगठन विरोधी गतिविधि, अनुशासनहीनता, भ्रष्टाचार अथवा पद का दुरुपयोग, संगठन की छवि धूमिल करना।"
+          ]
+        },
+        {
+          id: 5,
+          title: "अध्याय – 5 : संगठनात्मक संरचना",
+          iconType: "landmark",
+          type: "points",
+          points: [
+            "केंद्रीय कार्य समिति",
+            "प्रदेश कार्यकारिणी",
+            "संभाग इकाई",
+            "जिला इकाई",
+            "तहसील इकाई",
+            "नगर / ग्राम इकाई"
+          ]
+        },
+        {
+          id: 6,
+          title: "अध्याय – 6 : प्रदेश कार्य समिति",
+          iconType: "landmark",
+          type: "points",
+          points: [
+            "धारा 1 : गठन — संगठन की सर्वोच्च प्रशासनिक इकाई “प्रदेश कार्य समिति” (पूर्व केंद्रीय समिति) होगी।",
+            "धारा 2 : संरचना — प्रदेश कार्य समिति में निम्न पद शामिल होंगे— प्रदेश अध्यक्ष, प्रदेश उपाध्यक्ष, प्रदेश महासचिव, प्रदेश संगठन मंत्री, प्रदेश सचिव, प्रदेश कोषाध्यक्ष, मीडिया प्रभारी, अनुशासन समिति अध्यक्ष, विशेष आमंत्रित सदस्य।",
+            "धारा 3 : अधिकार — प्रदेश कार्य समिति संगठन की नीतियाँ निर्धारित करेगी, पदाधिकारियों की नियुक्ति एवं निष्कासन करेगी, संविधान संशोधन की अनुशंसा करेगी, और संगठन की सभी इकाइयों की निगरानी करेगी।"
+          ]
+        },
+        {
+          id: 7,
+          title: "अध्याय – 7 : अध्यक्ष की शक्तियाँ",
+          iconType: "shield",
+          type: "points",
+          points: [
+            "धारा 1 : सर्वोच्च अधिकार — संगठन का सर्वोच्च अधिकार प्रदेश अध्यक्ष के पास सुरक्षित रहेगा।",
+            "धारा 2 : वीटो पावर (Veto Power) — प्रदेश अध्यक्ष को संगठन के प्रत्येक निर्णय पर पूर्ण वीटो पावर प्राप्त होगी। यदि अध्यक्ष किसी निर्णय को संगठनहित में अनुचित मानते हैं, तो वे उसे तत्काल प्रभाव से निरस्त कर सकेंगे।",
+            "धारा 3 : विशेष अधिकार — प्रदेश अध्यक्ष को निम्न विशेष अधिकार प्राप्त होंगे— किसी भी पदाधिकारी की नियुक्ति; किसी भी समिति का गठन या विघटन; आपातकालीन निर्णय लेना; संगठनात्मक विवादों का अंतिम निर्णय। अध्यक्ष का निर्णय अंतिम एवं सर्वमान्य होगा।"
+          ]
+        },
+        {
+          id: 8,
+          title: "अध्याय – 8 : पदाधिकारियों का कार्यकाल",
+          iconType: "pen",
+          type: "points",
+          points: [
+            "धारा 1 : अवधि — संगठन के सभी पदाधिकारियों का कार्यकाल एक वर्ष का होगा।",
+            "धारा 2 : पुनर्नियुक्ति — कार्य एवं अनुशासन के आधार पर किसी भी पदाधिकारी को पुनः नियुक्त किया जा सकेगा।",
+            "धारा 3 : कार्यकाल समाप्ति — अनुशासन समिति की अनुशंसा पर प्रदेश कार्य समिति अथवा अध्यक्ष किसी भी पदाधिकारी का कार्यकाल कभी भी समाप्त कर सकते हैं।"
+          ]
+        },
+        {
+          id: 9,
+          title: "अध्याय – 9 : अनुशासन समिति",
+          iconType: "alert",
+          type: "points",
+          points: [
+            "धारा 1 : गठन — संगठन में एक स्वतंत्र “अनुशासन समिति” गठित की जाएगी।",
+            "धारा 2 : अधिकार — अनुशासन समिति को शिकायतों की जांच, अनुशासनहीनता पर कार्रवाई की अनुशंसा, पद समाप्ति की अनुशंसा, और चेतावनी, निलंबन अथवा निष्कासन की सलाह देने का अधिकार होगा।"
+          ]
+        },
+        {
+          id: 10,
+          title: "अध्याय – 10 : वित्तीय व्यवस्था",
+          iconType: "landmark",
+          type: "points",
+          points: [
+            "संगठन का आय स्रोत सदस्यता शुल्क, दान एवं स्वैच्छिक सहयोग होगा।",
+            "संगठन का कोष संगठनहित एवं समाजसेवा हेतु उपयोग किया जाएगा।",
+            "वित्तीय पारदर्शिता बनाए रखना अनिवार्य होगा।"
+          ]
+        },
+        {
+          id: 11,
+          title: "अध्याय – 11 : संविधान संशोधन",
+          iconType: "edit",
+          type: "text",
+          text: "संगठन के संविधान में संशोधन प्रदेश कार्य समिति की बैठक में 2/3 बहुमत से किया जा सकेगा, किन्तु अंतिम स्वीकृति अध्यक्ष की होगी।"
+        },
+        {
+          id: 12,
+          title: "अध्याय – 12 : संगठन का ध्येय वाक्य",
+          iconType: "pen",
+          type: "text",
+          text: "“मानवता • एकता • संगठन • सम्मान”"
         }
-      ],
-      sec9_title: "९. बैठक नियम",
-      sec9_points: [
-        "संगठन की मासिक बैठक आयोजित की जाएगी।",
-        "विशेष परिस्थिति में आपात बैठक बुलाई जा सकती है।",
-        "निर्णय बहुमत के आधार पर मान्य होंगे।",
-        "बैठक की कार्यवाही लिखित रूप में सुरक्षित रखी जाएगी।"
-      ],
-      sec10_title: "१०. वित्तीय नियम",
-      sec10_points: [
-        "संगठन का बैंक खाता संगठन के नाम से संचालित किया जाएगा।",
-        "आय-व्यय का स्पष्ट एवं लिखित रिकॉर्ड रखा जाएगा।",
-        "संगठन की राशि केवल समाजहित एवं संगठनात्मक कार्यों में उपयोग होगी।",
-        "किसी भी प्रकार के वित्तीय दुरुपयोग पर कार्रवाई की जाएगी।"
-      ],
-      sec11_title: "११. अनुशासन नियम",
-      sec11_points: [
-        "जातीय, धार्मिक या राजनीतिक नफरत फैलाना प्रतिबंधित होगा।",
-        "संगठन की छवि खराब करने वाले सदस्य पर अनुशासनात्मक कार्रवाई की जाएगी।",
-        "कानून विरोधी गतिविधियों में शामिल सदस्य को निष्कासित किया जा सकेगा।",
-        "संगठन में आपसी सम्मान एवं अनुशासन बनाए रखना अनिवार्य होगा।"
-      ],
-      sec12_title: "१२. संविधान संशोधन नियम",
-      sec12_text: "कार्यकारिणी की सहमति एवं बहुमत से संविधान में आवश्यक संशोधन किया जा सकेगा।",
-      sec13_title: "१३. संगठन विघटन नियम",
-      sec13_text: "विशेष परिस्थिति में कार्यकारिणी के 2/3 बहुमत से संगठन का विघटन किया जा सकेगा।",
-      sec14_title: "१४. शपथ",
-      sec14_text: "“मैं मध्य प्रदेश युवा समाज सेना का सदस्य होकर समाजहित, राष्ट्रहित एवं मानव सेवा के कार्य ईमानदारी एवं अनुशासन के साथ करने की शपथ लेता/लेती हूँ।”",
-      sec14_sig: "सदस्य के हस्ताक्षर"
+      ]
     }
   },
   en: {
@@ -325,8 +351,8 @@ export const translations: Record<'hi' | 'en', TranslationSet> = {
     story: {
       sectionTitle: "Our Narrative",
       sectionSubtitle: "The Genesis of a Movement",
-      originTitle: "Birth of a Philosophy",
-      originText: "The foundation of Madhya Pradesh Yuva Samaj Sena was laid not just as an organization, but as a deep commitment to serve the last person standing in society. Whenever humanity called, our youth stepped forward to lead. We believe true national power lies in the core energy of its youth.",
+      originTitle: "Birth of a Philosophy & Foundation",
+      originText: "The emergence of 'Madhya Pradesh Yuva Samaj Sena' took place during the difficult times of the COVID-19 pandemic on June 20, 2020. The organization initially started its active social service and public cooperation in the Manpur tehsil of Umaria district in Madhya Pradesh. Considering human service as the supreme duty under adverse conditions, the organization is constantly striving to move forward in the interest of society and the nation. We, the youth who believe in social, national, and human values, establish this organization to strengthen the spirit of equality, unity, cooperation, justice, and humanity.",
       youthTitle: "Youth Empowerment",
       youthText: "Our mission goes beyond external aid; we build character, leadership, and social consciousness inside every young individual. We nurture self-reliant, patriotic, and responsible citizens ready to accelerate our nation's progress.",
       unityTitle: "Social Integrity",
@@ -385,116 +411,160 @@ export const translations: Record<'hi' | 'en', TranslationSet> = {
       formSubmit: "Send Message",
       formSuccess: "Your message has been received! Our volunteers will get in touch with you shortly.",
       addressTitle: "Headquarters",
-      addressValue: "102, Yuva Shakti Bhavan, Malviya Nagar, Bhopal, Madhya Pradesh - 462003",
+      addressValue: "Gaur, Sadar Road, Mahakoshal Province, Jabalpur, District - Jabalpur (M.P.) 482001",
       phoneTitle: "Helpline Numbers",
       phoneValue: "+91 98765 43210, +91 755 123456",
       emailTitle: "Email Address",
-      emailValue: "sampark@mpyuvass.org",
+      emailValue: "yuvasamajsena@gmail.com",
       socialTitle: "Follow Our Journey"
     },
     footer: {
-      slogan: "One Step Towards Social Service - Nation First, Service Above Self",
+      slogan: "One Step Towards Social Service - Humanity • Unity • Organization • Honor",
       quickLinks: "Quick Navigation",
       contactUs: "Get In Touch",
-      devCredit: "Designed & Developed by Elite Tech Labs",
+      devCredit: "Reg No: 04/14/01/19559/18 (Managed by Ashish Chhaya Multi-purpose Society)",
       rights: "All Rights Reserved."
     },
     constitution: {
       title: "Professional Constitution & Bylaws",
       subtitle: "Official Code of Regulations for Madhya Pradesh Yuva Samaj Sena",
-      sec1_title: "1. Organization Name",
-      sec1_name: "“Madhya Pradesh Yuva Samaj Sena” (MPYSS)",
-      sec2_title: "2. Head Office",
-      sec2_village: "Village/Town: Malviya Nagar, Bhopal",
-      sec2_tehsil: "Tehsil: Huzur",
-      sec2_district: "District: Bhopal",
-      sec2_state: "State: Madhya Pradesh",
-      sec3_title: "3. Nature of the Organization",
-      sec3_text: "“Madhya Pradesh Yuva Samaj Sena” is a non-political, non-profit, and social welfare organization dedicated entirely to community services, public welfare, and mobilizing youth.",
-      sec4_title: "4. Core Objectives",
-      sec4_points: [
-        "Promoting education, literacy, and community awareness.",
-        "Providing welfare support to underprivileged, poor, and needy individuals.",
-        "Organizing blood donation camps, health checkups, and civic aid drives.",
-        "Mobilizing youth against drug abuse and fostering civic responsibilities.",
-        "Executing environmental sustainability programs and cleanliness campaigns.",
-        "Strengthening social integrity, brotherhood, and national interest.",
-        "Presenting public grievances to administration via peaceful, constitutional paths.",
-        "Initiating immediate relief work during natural disasters and emergencies.",
-        "Nurturing self-reliance, entrepreneurship, and skill development in youth.",
-        "Fostering women safety, dignity, self-defense training, and empowerment."
-      ],
-      sec5_title: "5. Founding Motto",
-      sec5_text: "“Service • Organization • Honor • National Interest”",
-      sec6_title: "6. Membership Rules",
-      sec6_points: [
-        "Any Indian citizen aged 18 years or above can become a member.",
-        "Every member must maintain an honorable, dignified social conduct.",
-        "Membership can be terminated for anti-organizational or illegal activities.",
-        "Fees and official identity cards shall be decided by the executive committee.",
-        "Strict adherence to all rules of the organization is mandatory."
-      ],
-      sec7_title: "7. Organizational Structure",
-      sec7_positions: [
-        "Patron",
-        "State President",
-        "State Vice President",
-        "State Secretary",
-        "Joint Secretary",
-        "Treasurer",
-        "Media Coordinator",
-        "Organization Minister",
-        "District President",
-        "Block President",
-        "Executive Committee Member"
-      ],
-      sec8_title: "8. Duties of Officers",
-      sec8_roles: [
+      preambleTitle: "Revised Preamble",
+      preambleText: "We, the youth who believe in social, national, and human values, establish 'Madhya Pradesh Yuva Samaj Sena' to strengthen the spirit of equality, unity, cooperation, justice, and humanity in society.\n\nThis organization will operate strictly on the principles of humanism, social upliftment, brotherhood, discipline, and public service.\n\nThe emergence of 'Madhya Pradesh Yuva Samaj Sena' took place during the difficult times of the COVID-19 pandemic on June 20, 2020. The organization initially started its active social service and public cooperation in the Manpur tehsil of Umaria district in Madhya Pradesh. Considering human service as the supreme duty under adverse conditions, the organization is constantly striving to move forward in the interest of society and the nation.\n\nThe objective of the organization is to consider the problem of every individual in society as our collective responsibility and to strive and cooperate for its resolution.\n\nWe solemnly pledge that the organization will always work on the path of humanity, unity, respect, and social justice.",
+      oathTitle: "Official Pledge & Declaration",
+      oathText: "“We, all members, take this solemn pledge that we will protect the dignity, discipline, and humanistic principles of the organization and will always work in the interest of society and the nation.”",
+      oathSig: "Signature of Member",
+      regLabel: "Reg No: 04/14/01/19559/18 (Managed by Ashish Chhaya Multi-purpose Society)",
+      chapters: [
         {
-          title: "State President",
-          desc: "Will lead the organization and preside over all executive assemblies."
+          id: 1,
+          title: "Chapter 1: Name & Structure",
+          iconType: "landmark",
+          type: "points",
+          points: [
+            "Section 1: Name — The name of the organization shall be “Madhya Pradesh Yuva Samaj Sena” (Madhya Pradesh Yuva Samaj Sena).",
+            "Section 2: Nature — This shall be a social, non-political, and humanitarian organization.",
+            "Section 3: Headquarters — The central headquarters of the organization shall be situated in Madhya Pradesh, as decided by the State Executive Committee."
+          ]
         },
         {
-          title: "State Secretary",
-          desc: "Will manage administration, official documentation, and institutional letters."
+          id: 2,
+          title: "Chapter 2: Core Objectives",
+          iconType: "book",
+          type: "points",
+          points: [
+            "Fostering humanity, unity, and brotherhood in society.",
+            "Assisting the needy and suffering individuals in society.",
+            "Providing social leadership and organizational strength to the youth.",
+            "Working for education, health, employment, and social justice.",
+            "Collective effort to resolve any member's problem by considering it as the problem of the entire organization.",
+            "Raising voice against prevailing social evils and injustice.",
+            "Keeping national and social interest paramount."
+          ]
         },
         {
-          title: "Treasurer",
-          desc: "Will monitor income, expenditures, and maintain institutional financial records."
+          id: 3,
+          title: "Chapter 3: Principles",
+          iconType: "shield",
+          type: "points",
+          points: [
+            "Section 1: Humanism Principle — The organization will be fully based on humanistic ideology. No discrimination will be made on the basis of caste, religion, class, region, or language.",
+            "Section 2: Collective Responsibility — The organization will consider any personal, social, or legal problem of its members as its collective responsibility and provide maximum possible support.",
+            "Section 3: Discipline Above All — Discipline will be held supreme in the organization. Any anti-organizational activity, factionalism, or work that hurts the dignity of the organization shall be punishable."
+          ]
         },
         {
-          title: "Media Coordinator",
-          desc: "Will direct social media channels, advertisements, and public relations."
+          id: 4,
+          title: "Chapter 4: Membership",
+          iconType: "check",
+          type: "points",
+          points: [
+            "Section 1: Eligibility — Any person aged 18 years or above can acquire membership of the organization.",
+            "Section 2: Termination — Membership can be terminated under the following conditions: Anti-organizational activity, indiscipline, corruption or abuse of position, tarnishing the image of the organization."
+          ]
+        },
+        {
+          id: 5,
+          title: "Chapter 5: Organizational Structure",
+          iconType: "landmark",
+          type: "points",
+          points: [
+            "State Executive Committee",
+            "State Board / Executive",
+            "Divisional Unit",
+            "District Unit",
+            "Tehsil Unit",
+            "Town / Village Unit"
+          ]
+        },
+        {
+          id: 6,
+          title: "Chapter 6: State Executive Committee",
+          iconType: "landmark",
+          type: "points",
+          points: [
+            "Section 1: Formation — The supreme administrative unit of the organization shall be the “State Executive Committee” (formerly Central Committee).",
+            "Section 2: Composition — The State Executive Committee shall comprise the following posts: State President, State Vice President, State General Secretary, State Organizing Secretary, State Secretary, State Treasurer, Media Coordinator, Disciplinary Committee Chairman, Special Invited Members.",
+            "Section 3: Powers — The State Executive Committee shall: Formulate organizational policies; appoint and expel officers; recommend constitutional amendments; monitor all units of the organization."
+          ]
+        },
+        {
+          id: 7,
+          title: "Chapter 7: President's Powers",
+          iconType: "shield",
+          type: "points",
+          points: [
+            "Section 1: Supreme Authority — The supreme authority of the organization shall remain vested in the State President.",
+            "Section 2: Veto Power — The State President shall possess complete veto power over every decision of the organization. If the President deems any decision inappropriate in the interest of the organization, they can veto it immediately.",
+            "Section 3: Special Rights — The State President shall have the following special rights: Appointment of any officer; formation or dissolution of any committee; emergency decision making; final decision on organizational disputes. The President's decision shall be final and universally accepted."
+          ]
+        },
+        {
+          id: 8,
+          title: "Chapter 8: Tenure of Officers",
+          iconType: "pen",
+          type: "points",
+          points: [
+            "Section 1: Duration — The tenure of all officers of the organization shall be one year.",
+            "Section 2: Reappointment — Any officer can be reappointed based on their performance and discipline.",
+            "Section 3: Pre-mature Termination — The State Executive Committee or the President can terminate the tenure of any officer at any time on the recommendation of the Disciplinary Committee."
+          ]
+        },
+        {
+          id: 9,
+          title: "Chapter 9: Disciplinary Committee",
+          iconType: "alert",
+          type: "points",
+          points: [
+            "Section 1: Formation — An independent “Disciplinary Committee” shall be constituted in the organization.",
+            "Section 2: Powers — The Disciplinary Committee shall have the following powers: Investigation of complaints; recommending action on indiscipline; recommending termination of office; advising warning, suspension, or expulsion."
+          ]
+        },
+        {
+          id: 10,
+          title: "Chapter 10: Financial Management",
+          iconType: "landmark",
+          type: "points",
+          points: [
+            "The income source of the organization shall be membership fees, donations, and voluntary contributions.",
+            "The funds shall be utilized solely for organizational interest and social service.",
+            "Maintaining financial transparency is absolutely mandatory."
+          ]
+        },
+        {
+          id: 11,
+          title: "Chapter 11: Constitutional Amendments",
+          iconType: "edit",
+          type: "text",
+          text: "Amendments to the constitution of the organization can be made in the meeting of the State Executive Committee by a 2/3rd majority, subject to final approval by the President."
+        },
+        {
+          id: 12,
+          title: "Chapter 12: Motto",
+          iconType: "pen",
+          type: "text",
+          text: "“Humanity • Unity • Organization • Honor”"
         }
-      ],
-      sec9_title: "9. Assembly & Meeting Bylaws",
-      sec9_points: [
-        "A monthly assembly/meeting of the organization shall be held.",
-        "Emergency meetings can be summoned under special circumstances.",
-        "Decisions will be validated based on the majority votes of the committee.",
-        "Action reports and proceedings of all meetings must be saved in writing."
-      ],
-      sec10_title: "10. Financial Regulations",
-      sec10_points: [
-        "Bank accounts shall be registered and operated strictly in the organization's name.",
-        "A clear, fully audit-ready written log of incomes & expenses shall be maintained.",
-        "Organizational funds shall be utilized solely for welfare and institutional work.",
-        "Strictest legal/internal action will be taken in cases of financial misuse."
-      ],
-      sec11_title: "11. Disciplinary Bylaws",
-      sec11_points: [
-        "Inciting caste, religious, or political hatred is strictly prohibited.",
-        "Strict action shall be taken against members spoiling the organization's reputation.",
-        "Immediate expulsion of members involved in unlawful or anti-social activities.",
-        "Maintaining mutual respect and internal discipline is absolutely mandatory."
-      ],
-      sec12_title: "12. Constitutional Amendments",
-      sec12_text: "Essential amendments to the constitution can be made solely with the consensus and majority of the executive committee.",
-      sec13_title: "13. Dissolution of Organization",
-      sec13_text: "Under extreme or special conditions, the organization can be dissolved solely with a 2/3rd majority vote of the executive committee.",
-      sec14_title: "14. Official Pledge / Oath",
-      sec14_text: "“Being a dedicated member of Madhya Pradesh Yuva Samaj Sena, I solemnly swear to serve community, country, and humanity with complete honesty, transparency, and discipline.”",
-      sec14_sig: "Signature of Member"
+      ]
     }
   }
 };

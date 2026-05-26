@@ -134,13 +134,13 @@ export default function ContactSection() {
                    style={{ backgroundImage: `url('https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=800&auto=format&fit=crop')` }} />
               
               {/* Saffron Glowing Location Dot */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+              <div className="absolute top-[52%] left-[64%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
                 <span className="flex h-4 w-4 relative mb-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff7700] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-4 w-4 bg-[#ff5100] border-2 border-white shadow-xl"></span>
                 </span>
                 <span className="px-3 py-1 rounded-lg bg-slate-900/90 backdrop-blur-md text-[9px] font-bold tracking-widest border border-white/10 text-white uppercase font-english">
-                  BHOPAL HEADQUARTERS
+                  JABALPUR HEADQUARTERS
                 </span>
               </div>
             </motion.div>

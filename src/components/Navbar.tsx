@@ -63,8 +63,8 @@ export default function Navbar() {
             href="/"
             className="flex items-center gap-2.5 cursor-pointer select-none group"
           >
-            <div className="relative w-9 h-9 rounded-xl bg-gradient-to-br from-[#ff5100] to-[#ff7700] flex items-center justify-center shadow-[0_4px_15px_rgba(255,81,0,0.25)] group-hover:scale-105 transition-all duration-300">
-              <Heart size={16} className="text-white fill-white/20" />
+            <div className="relative w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-[0_4px_15px_rgba(0,0,0,0.06)] group-hover:scale-105 transition-all duration-300 overflow-hidden border border-slate-100 p-0.5 shrink-0">
+              <img src="/logo.jpeg" alt="MPYSS Logo" className="w-full h-full object-cover rounded-lg" />
             </div>
             <div>
               <span className="font-hindi text-base md:text-lg font-black tracking-wide text-slate-900 group-hover:text-[#ff7700] transition-colors duration-300">
@@ -221,13 +221,15 @@ export default function Navbar() {
               </div>
 
               {/* Mobile CTA */}
-              <Link
-                href="/contact"
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf5x3zW7u8K8_7YV2J4J7D8E7H6-G3_example/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block w-full py-4 text-center text-sm font-bold uppercase bg-gradient-to-r from-[#ff5100] to-[#ff7700] rounded-xl text-white shadow-md cursor-pointer"
               >
                 {t.nav.joinNow}
-              </Link>
+              </a>
             </div>
           </motion.div>
         )}
