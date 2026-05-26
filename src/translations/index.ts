@@ -415,7 +415,7 @@ export const translations: Record<'hi' | 'en', TranslationSet> = {
       phoneTitle: "Helpline Numbers",
       phoneValue: "+91 91319 54342",
       emailTitle: "Email Address",
-      emailValue: "yuvasamajsena@gmail.com",
+      emailValue: "myss.mp.in@gmail.com",
       socialTitle: "Follow Our Journey"
     },
     footer: {
