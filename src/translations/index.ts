@@ -177,9 +177,9 @@ export const translations: Record<'hi' | 'en', TranslationSet> = {
       addressTitle: "प्रधान कार्यालय",
       addressValue: "गौर, सदर रोड, महाकौशल प्रान्त, जबलपुर, जिला - जबलपुर (म. प्र.) 482001",
       phoneTitle: "संपर्क सूत्र",
-      phoneValue: "+91 98765 43210, +91 755 123456",
+      phoneValue: "+91 91319 54342",
       emailTitle: "ईमेल",
-      emailValue: "yuvasamajsena@gmail.com",
+      emailValue: "myss.mp.in@gmail.com",
       socialTitle: "सोशल मीडिया पर हमें फॉलो करें"
     },
     footer: {
