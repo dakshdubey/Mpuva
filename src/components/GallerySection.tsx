@@ -78,15 +78,6 @@ export default function GallerySection() {
     {
       id: 6,
       category: "volunteers",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.30%20AM.jpeg",
-      titleHi: "युवा समाज सेना मानपुर का जनसंपर्क",
-      titleEn: "Manpur Unit Public Relations",
-      descHi: "मानपुर ब्लॉक क्षेत्र में संगठन के प्रचार-प्रसार और सामाजिक मुद्दों पर जन-जागरण हेतु सक्रिय कार्यकर्ताओं का सामूहिक अभियान।",
-      descEn: "Active community mobilization and public awareness campaign by the volunteers of the Manpur block unit."
-    },
-    {
-      id: 7,
-      category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.31%20AM.jpeg",
       titleHi: "स्थानीय पुलिस प्रशासन को ज्ञापन",
       titleEn: "Memorandum to Local Police",
@@ -94,7 +85,7 @@ export default function GallerySection() {
       descEn: "Handed over a petition to police officials requesting increased security patrols and swift action on thefts."
     },
     {
-      id: 8,
+      id: 7,
       category: "events",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.32%20AM%20(1).jpeg",
       titleHi: "मेधावी छात्र-छात्राओं का सम्मान",
@@ -103,7 +94,7 @@ export default function GallerySection() {
       descEn: "Honoring bright school children with certificates and prizes for academic and co-curricular excellence on Republic Day."
     },
     {
-      id: 9,
+      id: 8,
       category: "events",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.32%20AM.jpeg",
       titleHi: "गणतंत्र दिवस समारोह व बैठक",
@@ -112,7 +103,7 @@ export default function GallerySection() {
       descEn: "Dignitaries and senior social workers gathered on the main stage of the organization's Republic Day ceremony."
     },
     {
-      id: 10,
+      id: 9,
       category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.33%20AM%20(1).jpeg",
       titleHi: "मानपुर ब्लॉक ईकाई की समीक्षा बैठक",
@@ -121,7 +112,7 @@ export default function GallerySection() {
       descEn: "Held an executive expansion meeting to appoint new block office-bearers and outline future service actions."
     },
     {
-      id: 11,
+      id: 10,
       category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.33%20AM.jpeg",
       titleHi: "थाना प्रभारी का स्वागत एवं अभिनंदन",
@@ -130,7 +121,7 @@ export default function GallerySection() {
       descEn: "Welcomed and facilitated the newly appointed Station House Officer, assuring community support for law enforcement."
     },
     {
-      id: 12,
+      id: 11,
       category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.34%20AM%20(1).jpeg",
       titleHi: "पुलिस के साथ रात्रि सुरक्षा गश्ती",
@@ -139,7 +130,7 @@ export default function GallerySection() {
       descEn: "Volunteers joining forces with local police officers during late-night security patrols to ensure town safety."
     },
     {
-      id: 13,
+      id: 12,
       category: "volunteers",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.34%20AM%20(2).jpeg",
       titleHi: "रात्रि सुरक्षा एवं गश्ती दल",
@@ -148,7 +139,7 @@ export default function GallerySection() {
       descEn: "Volunteers on alert during our community security drive at the bus stand to prevent public thefts."
     },
     {
-      id: 14,
+      id: 13,
       category: "events",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.35%20AM%20(1).jpeg",
       titleHi: "नवनियुक्त एसडीएम एवं तहसीलदार से भेंट",
@@ -157,7 +148,7 @@ export default function GallerySection() {
       descEn: "Met the newly appointed Sub-Divisional Magistrate (SDM) and Tehsildar to discuss regional development."
     },
     {
-      id: 15,
+      id: 14,
       category: "events",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.35%20AM.jpeg",
       titleHi: "प्रशासनिक अधिकारियों का पुष्पगुच्छ से स्वागत",
@@ -166,7 +157,7 @@ export default function GallerySection() {
       descEn: "Presented a floral bouquet to welcome new officers, committing our youth network to support local administrative tasks."
     },
     {
-      id: 16,
+      id: 15,
       category: "service",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.36%20AM%20(1).jpeg",
       titleHi: "गर्भवती व प्रसूती महिलाओं को फल वितरण",
@@ -175,7 +166,7 @@ export default function GallerySection() {
       descEn: "Distributing fresh fruits and nutritional kits to pregnant and new mothers at the Community Health Center."
     },
     {
-      id: 17,
+      id: 16,
       category: "service",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.36%20AM.jpeg",
       titleHi: "सामुदायिक स्वास्थ्य केंद्र में फल वितरण",
@@ -184,7 +175,7 @@ export default function GallerySection() {
       descEn: "Spreading joy and health encouragement by organizing fruit distribution drives in community hospitals."
     },
     {
-      id: 18,
+      id: 17,
       category: "events",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.37%20AM%20(1).jpeg",
       titleHi: "विमान हादसे के पीड़ितों हेतु कैंडल मार्च",
@@ -193,7 +184,7 @@ export default function GallerySection() {
       descEn: "Expressing deep grief and solidary by holding a candlelight march for victims of a tragic aviation accident."
     },
     {
-      id: 19,
+      id: 18,
       category: "events",
       img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.37%20AM.jpeg",
       titleHi: "वीर शिरोमणि महाराणा प्रताप जयंती",
