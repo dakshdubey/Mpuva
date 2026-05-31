@@ -191,7 +191,34 @@ export default function GallerySection() {
       titleEn: "Maharana Pratap Jayanti Celebration",
       descHi: "महाराणा प्रताप जी की जयंती पर मानपुर बस स्टैंड में भव्य कार्यक्रम, उनकी शौर्य गाथा और देशभक्ति के संकल्पों का पाठ।",
       descEn: "Celebrating the birth anniversary of Maharana Pratap at the bus stand to inspire local youth with valor."
-    }
+    },
+{
+  id: 19,
+  category: "events",
+  img: "/assets/img/cctv-manpur-news.jpeg",
+  titleHi: "मानपुर नगर में CCTV कैमरे लगाने की उठी मांग",
+  titleEn: "Demand Raised for Installing CCTV Cameras in Manpur City",
+  descHi: "मध्य प्रदेश युवा समाज सेना संगठन ने मानपुर नगर के संवेदनशील और आवश्यक स्थानों पर CCTV कैमरे लगाने की मांग को लेकर नगर परिषद अधिकारियों को ज्ञापन सौंपा। संगठन का कहना है कि लगातार युवाओं और बच्चों के अचानक गायब होने तथा बढ़ते अपराधों को देखते हुए सुरक्षा व्यवस्था मजबूत करना बेहद जरूरी है। संगठन प्रभारी राहुल शुक्ला ने कहा कि प्रमुख चौराहों, बाजारों और भीड़भाड़ वाले क्षेत्रों में कैमरे लगने से चोरी, असामाजिक गतिविधियों और अपराधों पर काफी हद तक नियंत्रण पाया जा सकेगा।",
+  descEn: "Madhya Pradesh Yuva Samaj Sena submitted a memorandum to Manpur Nagar Parishad demanding the installation of CCTV cameras at sensitive and important locations across the city. The organization stated that due to increasing incidents of missing youths, children, theft, and criminal activities, strengthening security arrangements has become essential. Organization head Rahul Shukla said that installing CCTV cameras at major intersections, markets, and crowded areas would help control crimes and improve public safety."
+},
+{
+  id: 20,
+  category: "events",
+  img: "/assets/img/cctv-awareness-drive.jpeg",
+  titleHi: "युवा समाज सेना ने नगर सुरक्षा को लेकर चलाया जागरूकता अभियान",
+  titleEn: "Youth Samaj Sena Conducted Awareness Campaign for City Safety",
+  descHi: "मानपुर नगर में आयोजित अभियान के दौरान मध्य प्रदेश युवा समाज सेना के सदस्यों ने नगर परिषद अधिकारियों से मुलाकात कर सुरक्षा व्यवस्था को मजबूत करने की अपील की। संगठन ने कहा कि CCTV कैमरे लगने से पुलिस प्रशासन को जांच में सहायता मिलेगी और नागरिकों में सुरक्षा की भावना बढ़ेगी। कार्यक्रम शांतिपूर्ण और अनुशासित तरीके से सम्पन्न हुआ जिसमें कई समाजसेवी और संगठन पदाधिकारी उपस्थित रहे।",
+  descEn: "During the campaign organized in Manpur city, members of Madhya Pradesh Yuva Samaj Sena met Nagar Parishad officials and appealed for stronger security arrangements. The organization said that installing CCTV cameras would assist the police administration in investigations and increase the sense of safety among citizens. The program was conducted peacefully and was attended by several social workers and organization officials."
+},
+{
+  id: 21,
+  category: "events",
+  img: "/assets/img/manpur-cctv-memorandum.jpeg",
+  titleHi: "मानपुर में अपराध नियंत्रण हेतु CCTV कैमरों की मांग तेज",
+  titleEn: "Demand for CCTV Cameras Intensifies in Manpur for Crime Control",
+  descHi: "मानपुर नगर में बढ़ती आपराधिक गतिविधियों और सुरक्षा चिंताओं को देखते हुए मध्य प्रदेश युवा समाज सेना ने नगर परिषद CMO को ज्ञापन सौंपकर CCTV कैमरे लगाने की मांग की। संगठन के अनुसार कैमरे लगने से अपराधियों पर निगरानी रखना आसान होगा और नागरिक स्वयं को अधिक सुरक्षित महसूस करेंगे। संगठन ने नगर परिषद से इस विषय पर जल्द निर्णय लेने की অपेक्षा জताई।",
+  descEn: "Considering the rising criminal activities and security concerns in Manpur city, Madhya Pradesh Yuva Samaj Sena submitted a memorandum to the Nagar Parishad CMO demanding the installation of CCTV cameras. According to the organization, surveillance cameras would make it easier to monitor criminals and help citizens feel safer. The organization requested the Nagar Parishad to take quick action on the matter."
+}
   ];
 
   const filteredItems = filter === "all" 
