@@ -20,206 +20,162 @@ export default function GallerySection() {
   const [filter, setFilter] = useState<"all" | "service" | "events" | "volunteers">("all");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  const galleryItems: GalleryItem[] = [
-    {
-      id: 0,
-      category: "service",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.18%20AM.jpeg",
-      titleHi: "बिजली संकट के विरोध में नगर बंद",
-      titleEn: "Manpur Bandh Against Power Crisis",
-      descHi: "बिजली की गंभीर समस्या के खिलाफ मानपुर क्षेत्र में ऐतिहासिक बंद का सफल आयोजन। व्यापारियों व आम जनता का मिला भारी समर्थन।",
-      descEn: "Led a successful Manpur shutdown to protest severe power cuts, receiving massive support from local merchants and residents."
-    },
-    {
-      id: 1,
-      category: "volunteers",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.22%20AM%20(1).jpeg",
-      titleHi: "किसानों की बिजली हेतु कमिश्नर को ज्ञापन",
-      titleEn: "Memorandum for Farmers' Power Supply",
-      descHi: "मानपुर विधानसभा क्षेत्र के किसानों को समुचित बिजली न मिलने के खिलाफ शहडोल कमिश्नर को ज्ञापन सौंप कार्रवाई की मांग।",
-      descEn: "Submitted a petition to the Shahdol Commissioner demanding regular power supply for farmers facing irrigation challenges."
-    },
-    {
-      id: 2,
-      category: "volunteers",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.25%20AM%20(1).jpeg",
-      titleHi: "जेई के ट्रांसफर हेतु शहडोल आयुक्त को ज्ञापन",
-      titleEn: "Petition to Transfer Corrupt Officer",
-      descHi: "विद्युत मंडल में व्याप्त भ्रष्टाचार और अनियमितताओं के कारण जेई के स्थानांतरण और दंडात्मक कार्रवाई के लिए कमिश्नर को ज्ञापन।",
-      descEn: "Demanded immediate transfer and inquiry of the electricity board's Junior Engineer due to corruption and negligence."
-    },
-    {
-      id: 3,
-      category: "service",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.25%20AM.jpeg",
-      titleHi: "मूलभूत सुविधाओं के लिए मानपुर में प्रदर्शन",
-      titleEn: "Protest for Basic Civic Amenities",
-      descHi: "पेयजल संकट, रुकी हुई नालियों की सफाई और क्षेत्र में लगातार हो रही चोरियों पर रोक लगाने हेतु जनपद सीईओ व टीआई को ज्ञापन।",
-      descEn: "Staged protests demanding clean drinking water, proper sanitation drainage, and control over thefts in Manpur."
-    },
-    {
-      id: 4,
-      category: "volunteers",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.29%20AM%20(1).jpeg",
-      titleHi: "पीड़ित महिला को न्याय दिलाने हेतु ज्ञापन",
-      titleEn: "Seeking Justice for Harassed Woman",
-      descHi: "चिल्हारी में एक आरआई द्वारा प्रताड़ित संगीता साहू को न्याय दिलाने और मामले की निष्पक्ष जांच के लिए एसपी कार्यालय में प्रदर्शन।",
-      descEn: "Demonstrated at the SP and Collector office seeking a fair investigation and justice for a harassed local woman."
-    },
-    {
-      id: 5,
-      category: "service",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.29%20AM.jpeg",
-      titleHi: "पेयजल व चोरी से मुक्ति की मांग",
-      titleEn: "Demanding Water Supply & Security",
-      descHi: "सोनी मोहल्ला व वार्ड नंबर 7 में पेयजल आपूर्ति बहाल करने तथा लगातार हो रही चोरियों के खिलाफ मानपुर सीईओ को सौंपा गया ज्ञापन।",
-      descEn: "Submitted a formal memorandum to the CEO to restore basic water utilities and curb recurring thefts in local wards."
-    },
-    {
-      id: 6,
-      category: "volunteers",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.31%20AM.jpeg",
-      titleHi: "स्थानीय पुलिस प्रशासन को ज्ञापन",
-      titleEn: "Memorandum to Local Police",
-      descHi: "नगर की कानून व्यवस्था दुरुस्त करने और लगातार हो रही चोरियों पर लगाम लगाने के लिए स्थानीय पुलिस प्रशासन को लिखा गया पत्र।",
-      descEn: "Handed over a petition to police officials requesting increased security patrols and swift action on thefts."
-    },
-    {
-      id: 7,
-      category: "events",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.32%20AM%20(1).jpeg",
-      titleHi: "मेधावी छात्र-छात्राओं का सम्मान",
-      titleEn: "Facilitating Talented Students",
-      descHi: "गणतंत्र दिवस के पावन अवसर पर मानपुर क्षेत्र के मेधावी छात्र-छात्राओं को प्रशस्ति पत्र एवं पुरस्कार देकर सम्मानित करते मुख्य अतिथि।",
-      descEn: "Honoring bright school children with certificates and prizes for academic and co-curricular excellence on Republic Day."
-    },
-    {
-      id: 8,
-      category: "events",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.32%20AM.jpeg",
-      titleHi: "गणतंत्र दिवस समारोह व बैठक",
-      titleEn: "Republic Day Celebration & Assembly",
-      descHi: "संगठन द्वारा आयोजित गणतंत्र दिवस समारोह के मंच पर उपस्थित विशिष्ट जन एवं वरिष्ठ समाजसेवक।",
-      descEn: "Dignitaries and senior social workers gathered on the main stage of the organization's Republic Day ceremony."
-    },
-    {
-      id: 9,
-      category: "volunteers",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.33%20AM%20(1).jpeg",
-      titleHi: "मानपुर ब्लॉक ईकाई की समीक्षा बैठक",
-      titleEn: "Manpur Unit Review Meeting",
-      descHi: "मानपुर कार्यालय में संगठन की कार्यकारिणी का विस्तार, नए पदाधिकारियों को जिम्मेदारियों का आवंटन व सेवा संकल्प बैठक।",
-      descEn: "Held an executive expansion meeting to appoint new block office-bearers and outline future service actions."
-    },
-    {
-      id: 10,
-      category: "volunteers",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.33%20AM.jpeg",
-      titleHi: "थाना प्रभारी का स्वागत एवं अभिनंदन",
-      titleEn: "Honoring the Station House Officer",
-      descHi: "नवनियुक्त थाना प्रभारी का मानपुर कार्यालय में स्वागत एवं कानून व्यवस्था में पुलिस प्रशासन के सहयोग का संगठन द्वारा आश्वासन।",
-      descEn: "Welcomed and facilitated the newly appointed Station House Officer, assuring community support for law enforcement."
-    },
-    {
-      id: 11,
-      category: "volunteers",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.34%20AM%20(1).jpeg",
-      titleHi: "पुलिस के साथ रात्रि सुरक्षा गश्ती",
-      titleEn: "Night Security Patrol with Police",
-      descHi: "नगर में चोरियों को रोकने के लिए थाना प्रभारी के निर्देशानुसार पुलिस के साथ रात्रि गश्त में शामिल युवा सेना के जांबाज।",
-      descEn: "Volunteers joining forces with local police officers during late-night security patrols to ensure town safety."
-    },
-    {
-      id: 12,
-      category: "volunteers",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.34%20AM%20(2).jpeg",
-      titleHi: "रात्रि सुरक्षा एवं गश्ती दल",
-      titleEn: "Night Patrol Volunteers Group",
-      descHi: "सघन सुरक्षा गश्ती अभियान के उपरांत मानपुर बस स्टैंड पर पुलिस प्रशासन के साथ तैनात जांबाज स्वयंसेवक।",
-      descEn: "Volunteers on alert during our community security drive at the bus stand to prevent public thefts."
-    },
-    {
-      id: 13,
-      category: "events",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.35%20AM%20(1).jpeg",
-      titleHi: "नवनियुक्त एसडीएम एवं तहसीलदार से भेंट",
-      titleEn: "Civic Meeting with SDM & Tehsildar",
-      descHi: "मानपुर के नवनियुक्त एसडीएम एवं तहसीलदार से शिष्टाचार मुलाकात कर बुके भेंट कर बधाई दी गई।",
-      descEn: "Met the newly appointed Sub-Divisional Magistrate (SDM) and Tehsildar to discuss regional development."
-    },
-    {
-      id: 14,
-      category: "events",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.35%20AM.jpeg",
-      titleHi: "प्रशासनिक अधिकारियों का पुष्पगुच्छ से स्वागत",
-      titleEn: "Welcoming Administrative Officials",
-      descHi: "मानपुर के विकास कार्यों में प्रशासन को सदैव संगठन की ओर से सहयोग देने का वचन देते हुए पुष्पगुच्छ भेंट किया।",
-      descEn: "Presented a floral bouquet to welcome new officers, committing our youth network to support local administrative tasks."
-    },
-    {
-      id: 15,
-      category: "service",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.36%20AM%20(1).jpeg",
-      titleHi: "गर्भवती व प्रसूती महिलाओं को फल वितरण",
-      titleEn: "Nutritional Fruit Distribution to Mothers",
-      descHi: "मानपुर सामुदायिक स्वास्थ्य केंद्र में भर्ती नवजात शिशुओं की माताओं को ताजे फलों व पोषण किट का निःशुल्क वितरण।",
-      descEn: "Distributing fresh fruits and nutritional kits to pregnant and new mothers at the Community Health Center."
-    },
-    {
-      id: 16,
-      category: "service",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.36%20AM.jpeg",
-      titleHi: "सामुदायिक स्वास्थ्य केंद्र में फल वितरण",
-      titleEn: "Hospital Support & Welfare Program",
-      descHi: "मरीजों एवं प्रसूती माताओं के बेहतर स्वास्थ्य की मंगल कामना करते हुए फल वितरण एवं स्वास्थ्य देखभाल प्रोत्साहन।",
-      descEn: "Spreading joy and health encouragement by organizing fruit distribution drives in community hospitals."
-    },
-    {
-      id: 17,
-      category: "events",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.37%20AM%20(1).jpeg",
-      titleHi: "विमान हादसे के पीड़ितों हेतु कैंडल मार्च",
-      titleEn: "Candle March for Plane Crash Victims",
-      descHi: "अहमदाबाद विमान हादसे में जान गंवाने वाले दिवंगत यात्रियों की आत्मिक शांति के लिए बस स्टैंड पर निकाला गया कैंडल मार्च।",
-      descEn: "Expressing deep grief and solidary by holding a candlelight march for victims of a tragic aviation accident."
-    },
-    {
-      id: 18,
-      category: "events",
-      img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.37%20AM.jpeg",
-      titleHi: "वीर शिरोमणि महाराणा प्रताप जयंती",
-      titleEn: "Maharana Pratap Jayanti Celebration",
-      descHi: "महाराणा प्रताप जी की जयंती पर मानपुर बस स्टैंड में भव्य कार्यक्रम, उनकी शौर्य गाथा और देशभक्ति के संकल्पों का पाठ।",
-      descEn: "Celebrating the birth anniversary of Maharana Pratap at the bus stand to inspire local youth with valor."
-    },
-{
-  id: 19,
-  category: "events",
-  img: "/assets/img/cctv-manpur-news.jpeg",
-  titleHi: "मानपुर नगर में CCTV कैमरे लगाने की उठी मांग",
-  titleEn: "Demand Raised for Installing CCTV Cameras in Manpur City",
-  descHi: "मध्य प्रदेश युवा समाज सेना संगठन ने मानपुर नगर के संवेदनशील और आवश्यक स्थानों पर CCTV कैमरे लगाने की मांग को लेकर नगर परिषद अधिकारियों को ज्ञापन सौंपा। संगठन का कहना है कि लगातार युवाओं और बच्चों के अचानक गायब होने तथा बढ़ते अपराधों को देखते हुए सुरक्षा व्यवस्था मजबूत करना बेहद जरूरी है। संगठन प्रभारी राहुल शुक्ला ने कहा कि प्रमुख चौराहों, बाजारों और भीड़भाड़ वाले क्षेत्रों में कैमरे लगने से चोरी, असामाजिक गतिविधियों और अपराधों पर काफी हद तक नियंत्रण पाया जा सकेगा।",
-  descEn: "Madhya Pradesh Yuva Samaj Sena submitted a memorandum to Manpur Nagar Parishad demanding the installation of CCTV cameras at sensitive and important locations across the city. The organization stated that due to increasing incidents of missing youths, children, theft, and criminal activities, strengthening security arrangements has become essential. Organization head Rahul Shukla said that installing CCTV cameras at major intersections, markets, and crowded areas would help control crimes and improve public safety."
-},
-{
-  id: 20,
-  category: "events",
-  img: "/assets/img/cctv-awareness-drive.jpeg",
-  titleHi: "युवा समाज सेना ने नगर सुरक्षा को लेकर चलाया जागरूकता अभियान",
-  titleEn: "Youth Samaj Sena Conducted Awareness Campaign for City Safety",
-  descHi: "मानपुर नगर में आयोजित अभियान के दौरान मध्य प्रदेश युवा समाज सेना के सदस्यों ने नगर परिषद अधिकारियों से मुलाकात कर सुरक्षा व्यवस्था को मजबूत करने की अपील की। संगठन ने कहा कि CCTV कैमरे लगने से पुलिस प्रशासन को जांच में सहायता मिलेगी और नागरिकों में सुरक्षा की भावना बढ़ेगी। कार्यक्रम शांतिपूर्ण और अनुशासित तरीके से सम्पन्न हुआ जिसमें कई समाजसेवी और संगठन पदाधिकारी उपस्थित रहे।",
-  descEn: "During the campaign organized in Manpur city, members of Madhya Pradesh Yuva Samaj Sena met Nagar Parishad officials and appealed for stronger security arrangements. The organization said that installing CCTV cameras would assist the police administration in investigations and increase the sense of safety among citizens. The program was conducted peacefully and was attended by several social workers and organization officials."
-},
-{
-  id: 21,
-  category: "events",
-  img: "/assets/img/manpur-cctv-memorandum.jpeg",
-  titleHi: "मानपुर में अपराध नियंत्रण हेतु CCTV कैमरों की मांग तेज",
-  titleEn: "Demand for CCTV Cameras Intensifies in Manpur for Crime Control",
-  descHi: "मानपुर नगर में बढ़ती आपराधिक गतिविधियों और सुरक्षा चिंताओं को देखते हुए मध्य प्रदेश युवा समाज सेना ने नगर परिषद CMO को ज्ञापन सौंपकर CCTV कैमरे लगाने की मांग की। संगठन के अनुसार कैमरे लगने से अपराधियों पर निगरानी रखना आसान होगा और नागरिक स्वयं को अधिक सुरक्षित महसूस करेंगे। संगठन ने नगर परिषद से इस विषय पर जल्द निर्णय लेने की অपेक्षा জताई।",
-  descEn: "Considering the rising criminal activities and security concerns in Manpur city, Madhya Pradesh Yuva Samaj Sena submitted a memorandum to the Nagar Parishad CMO demanding the installation of CCTV cameras. According to the organization, surveillance cameras would make it easier to monitor criminals and help citizens feel safer. The organization requested the Nagar Parishad to take quick action on the matter."
-}
-  ];
+  const galleryItems: GalleryItem[] =[
+  {
+    id: 1,
+    category: "volunteers",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.22%20AM%20(1).jpeg",
+    titleHi: "किसानों की बिजली हेतु कमिश्नर को ज्ञापन",
+    titleEn: "Memorandum for Farmers' Power Supply",
+    descHi: "मानपुर विधानसभा क्षेत्र के किसानों को समुचित बिजली न मिलने के खिलाफ शहडोल कमिश्नर को ज्ञापन सौंप कार्रवाई की मांग।",
+    descEn: "Submitted a petition to the Shahdol Commissioner demanding regular power supply for farmers facing irrigation challenges."
+  },
+  {
+    id: 2,
+    category: "volunteers",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.25%20AM%20(1).jpeg",
+    titleHi: "जेई के ट्रांसफर हेतु शहडोल आयुक्त को ज्ञापन",
+    titleEn: "Petition to Transfer Corrupt Officer",
+    descHi: "विद्युत मंडल में व्याप्त भ्रष्टाचार और अनियमितताओं के कारण जेई के स्थानांतरण और दंडात्मक कार्रवाई के लिए कमिश्नर को ज्ञापन।",
+    descEn: "Demanded immediate transfer and inquiry of the electricity board's Junior Engineer due to corruption and negligence."
+  },
+  {
+    id: 7,
+    category: "events",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.32%20AM%20(1).jpeg",
+    titleHi: "मेधावी छात्र-छात्राओं का सम्मान",
+    titleEn: "Facilitating Talented Students",
+    descHi: "गणतंत्र दिवस के पावन अवसर पर मानपुर क्षेत्र के मेधावी छात्र-छात्राओं को प्रशस्ति पत्र एवं पुरस्कार देकर सम्मानित करते मुख्य अतिथि।",
+    descEn: "Honoring bright school children with certificates and prizes for academic and co-curricular excellence on Republic Day."
+  },
+  {
+    id: 8,
+    category: "events",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.32%20AM.jpeg",
+    titleHi: "गणतंत्र दिवस समारोह व बैठक",
+    titleEn: "Republic Day Celebration & Assembly",
+    descHi: "संगठन द्वारा आयोजित गणतंत्र दिवस समारोह के मंच पर उपस्थित विशिष्ट जन एवं वरिष्ठ समाजसेवक।",
+    descEn: "Dignitaries and senior social workers gathered on the main stage of the organization's Republic Day ceremony."
+  },
+  {
+    id: 9,
+    category: "volunteers",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.33%20AM%20(1).jpeg",
+    titleHi: "मानपुर ब्लॉक ईकाई की समीक्षा बैठक",
+    titleEn: "Manpur Unit Review Meeting",
+    descHi: "मानपुर कार्यालय में संगठन की कार्यकारिणी का विस्तार, नए पदाधिकारियों को जिम्मेदारियों का आवंटन व सेवा संकल्प बैठक।",
+    descEn: "Held an executive expansion meeting to appoint new block office-bearers and outline future service actions."
+  },
+  {
+    id: 10,
+    category: "volunteers",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.33%20AM.jpeg",
+    titleHi: "थाना प्रभारी का स्वागत एवं अभिनंदन",
+    titleEn: "Honoring the Station House Officer",
+    descHi: "नवनियुक्त थाना प्रभारी का मानपुर कार्यालय में स्वागत एवं कानून व्यवस्था में पुलिस प्रशासन के सहयोग का संगठन द्वारा आश्वासन।",
+    descEn: "Welcomed and facilitated the newly appointed Station House Officer, assuring community support for law enforcement."
+  },
+  {
+    id: 11,
+    category: "volunteers",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.34%20AM%20(1).jpeg",
+    titleHi: "पुलिस के साथ रात्रि सुरक्षा गश्ती",
+    titleEn: "Night Security Patrol with Police",
+    descHi: "नगर में चोरियों को रोकने के लिए थाना प्रभारी के निर्देशानुसार पुलिस के साथ रात्रि गश्त में शामिल युवा सेना के जांबाज।",
+    descEn: "Volunteers joining forces with local police officers during late-night security patrols to ensure town safety."
+  },
+  {
+    id: 12,
+    category: "volunteers",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.34%20AM%20(2).jpeg",
+    titleHi: "रात्रि सुरक्षा एवं गश्ती दल",
+    titleEn: "Night Patrol Volunteers Group",
+    descHi: "सघन सुरक्षा गश्ती अभियान के उपरांत मानपुर बस स्टैंड पर पुलिस प्रशासन के साथ तैनात जांबाज स्वयंसेवक।",
+    descEn: "Volunteers on alert during our community security drive at the bus stand to prevent public thefts."
+  },
+  {
+    id: 13,
+    category: "events",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.35%20AM%20(1).jpeg",
+    titleHi: "नवनियुक्त एसडीएम एवं तहसीलदार से भेंट",
+    titleEn: "Civic Meeting with SDM & Tehsildar",
+    descHi: "मानपुर के नवनियुक्त एसडीएम एवं तहसीलदार से शिष्टाचार मुलाकात कर बुके भेंट कर बधाई दी गई।",
+    descEn: "Met the newly appointed Sub-Divisional Magistrate (SDM) and Tehsildar to discuss regional development."
+  },
+  {
+    id: 14,
+    category: "events",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.35%20AM.jpeg",
+    titleHi: "प्रशासनिक अधिकारियों का पुष्पगुच्छ से स्वागत",
+    titleEn: "Welcoming Administrative Officials",
+    descHi: "मानपुर के विकास कार्यों में प्रशासन को सदैव संगठन की ओर से सहयोग देने का वचन देते हुए पुष्पगुच्छ भेंट किया।",
+    descEn: "Presented a floral bouquet to welcome new officers, committing our youth network to support local administrative tasks."
+  },
+  {
+    id: 15,
+    category: "service",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.36%20AM%20(1).jpeg",
+    titleHi: "गर्भवती व प्रसूती महिलाओं को फल वितरण",
+    titleEn: "Nutritional Fruit Distribution to Mothers",
+    descHi: "मानपुर सामुदायिक स्वास्थ्य केंद्र में भर्ती नवजात शिशुओं की माताओं को ताजे फलों व पोषण किट का निःशुल्क वितरण।",
+    descEn: "Distributing fresh fruits and nutritional kits to pregnant and new mothers at the Community Health Center."
+  },
+  {
+    id: 16,
+    category: "service",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.36%20AM.jpeg",
+    titleHi: "सामुदायिक स्वास्थ्य केंद्र में फल वितरण",
+    titleEn: "Hospital Support & Welfare Program",
+    descHi: "मरीजों एवं प्रसूती माताओं के बेहतर स्वास्थ्य की मंगल कामना करते हुए फल वितरण एवं स्वास्थ्य देखभाल प्रोत्साहन।",
+    descEn: "Spreading joy and health encouragement by organizing fruit distribution drives in community hospitals."
+  },
+  {
+    id: 17,
+    category: "events",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.37%20AM%20(1).jpeg",
+    titleHi: "विमान हादसे के पीड़ितों हेतु कैंडल मार्च",
+    titleEn: "Candle March for Plane Crash Victims",
+    descHi: "अहमदाबाद विमान हादसे में जान गंवाने वाले दिवंगत यात्रियों की आत्मिक शांति के लिए बस स्टैंड पर निकाला गया कैंडल मार्च।",
+    descEn: "Expressing deep grief and solidary by holding a candlelight march for victims of a tragic aviation accident."
+  },
+  {
+    id: 18,
+    category: "events",
+    img: "/assets/img/WhatsApp%20Image%202026-05-19%20at%2012.39.37%20AM.jpeg",
+    titleHi: "वीर शिरोमणि महाराणा प्रताप जयंती",
+    titleEn: "Maharana Pratap Jayanti Celebration",
+    descHi: "महाराणा प्रताप जी की जयंती पर मानपुर बस स्टैंड में भव्य कार्यक्रम, उनकी शौर्य गाथा और देशभक्ति के संकल्पों का पाठ।",
+    descEn: "Celebrating the birth anniversary of Maharana Pratap at the bus stand to inspire local youth with valor."
+  },
+  {
+    id: 19,
+    category: "events",
+    img: "/assets/img/cctv-manpur-news.jpeg",
+    titleHi: "मानपुर नगर में CCTV कैमरे लगाने की उठी मांग",
+    titleEn: "Demand Raised for Installing CCTV Cameras in Manpur City",
+    descHi: "मध्य प्रदेश युवा समाज सेना संगठन ने मानपुर नगर के संवेदनशील और आवश्यक स्थानों पर CCTV कैमरे लगाने की मांग को लेकर नगर परिषद अधिकारियों को ज्ञापन सौंपा।",
+    descEn: "Madhya Pradesh Yuva Samaj Sena submitted a memorandum demanding CCTV installation across sensitive areas in Manpur city."
+  },
+  {
+    id: 20,
+    category: "events",
+    img: "/assets/img/cctv-awareness-drive.jpeg",
+    titleHi: "युवा समाज सेना ने नगर सुरक्षा को लेकर चलाया जागरूकता अभियान",
+    titleEn: "Youth Samaj Sena Conducted Awareness Campaign for City Safety",
+    descHi: "मानपुर नगर में आयोजित अभियान के दौरान संगठन ने नगर सुरक्षा मजबूत करने और CCTV व्यवस्था लागू करने की मांग उठाई।",
+    descEn: "The organization conducted a peaceful awareness campaign advocating stronger city security and CCTV surveillance."
+  },
+  {
+    id: 21,
+    category: "events",
+    img: "/assets/img/manpur-cctv-memorandum.jpeg",
+    titleHi: "मानपुर में अपराध नियंत्रण हेतु CCTV कैमरों की मांग तेज",
+    titleEn: "Demand for CCTV Cameras Intensifies in Manpur",
+    descHi: "नगर में बढ़ती सुरक्षा चिंताओं को देखते हुए संगठन ने CCTV कैमरे लगाने हेतु नगर परिषद को ज्ञापन सौंपा।",
+    descEn: "The organization intensified its demand for CCTV surveillance to strengthen crime control and public safety."
+  }
+];
+
 
   const filteredItems = filter === "all" 
     ? galleryItems 
