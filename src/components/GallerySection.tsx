@@ -20,7 +20,7 @@ export default function GallerySection() {
   const [filter, setFilter] = useState<"all" | "service" | "events" | "volunteers">("all");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-  const galleryItems: GalleryItem[] =[
+  const galleryItems: GalleryItem[]=[
   {
     id: 1,
     category: "volunteers",
